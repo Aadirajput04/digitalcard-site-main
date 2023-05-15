@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abhaya Libre';
+
+}
+
+
+.home {
+    display: flex;
+    min-width: 100vh;
+    position: relative;
+
+}
+
+.home .left .inner.sticky .icon {
+    position: absolute;
+    left: -40px;
+    top: -40px;
+}
+
+.home .left .inner.sticky .icon1 {
+    position: absolute;
+    left: -80px;
+    top: -80px;
+}
+
+
+.home .left {
+    flex: 40%;
+    margin-right: 20px;
+}
+
+.home .right {
+    flex: 60%;
+
+}
+
+
+.left .inner.sticky {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.home .dp {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+.home .profile-manu .name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #142A54;
+
+}
+
+
+
+.home .profile-manu .name h1 {
+    padding: 70px 0px 0px 136px;
+}
+
+.home .profile-manu .social {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    row-gap: 5px;
+    padding-top: 20px;
+
+}
+
+/*
+.home .profile-manu .social img {
+    /* flex-direction: column; */
+
+
+.home .profile-manu .text {
+    /* padding-left: 135px;
+    padding-right: 0;
+    padding-top: 40px; */
+    color: #142A54;
+    padding: 40px 37px 40px 135px;
+}
+
+.home .profile-manu .info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    padding-right: 20px;
+}
+
+.home .profile-manu .info h1 {
+    padding-right: 15px;
+    color: #142A54;
+    font-size: 43px;
+}
+.home .right .container h2,.reviews h1,.gallery h1,.payment h2,.map h2,.wwr h2{
+    font-size: 38px;
+}
+
+
+.home .profile-manu .info .logos {
+    height: 45px;
+    width: auto;
+}
+
+.home .profile-manu .info .information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #142A54;
+
+
+}
+
+.home .profile-manu .info .information img {
+    padding-left: 10px;
+}
+
+
+
+
+.home .left .inner.sticky .ractangle {
+    position: absolute;
+    left: -50px;
+
+}
+
+/* ---------------------------------------------------scroll section started-------------------------------------------------- */
+
+.container {
+    margin-left: -11px !important;
+    margin-right: 53px !important;
+    overflow: hidden;
+    max-width: 980px !important;
+}
+
+.home .right .container {
+    background-color: #E8F0FF;
+    margin-top: 70px;
+    border-radius: 32px;
+}
+
+.home .right .container h2 {
+    padding-top: 25px;
+    /* padding-left: 25px; */
+    padding-right: 630px;
+}
+
+/* .border-3{
+
+            width: 168px !important;
+} */
+
+.product-details {
+
+    max-width: 236px;
+    height: 196px;
+
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 0px 0 0 30px;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+
+}
+
+.products {
+    margin-top: 48px;
+
+}
+
+.pro-up {
+    background-color: #fff;
+
+}
+
+.pro-down {
+    background-color: rgb(42, 39, 39);
+    border-radius: 0px 0 0 30px;
+    height: 111px;
+
+}
+
+.pro-decs h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #F4FAFF;
+}
+
+.pro-decs p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #F4FAFF;
+}
+
+
+.pro-decs h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 10px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #F4FAFF;
+}
+
+.reviews {
+    margin: 87px 0 87px 0;
+}
+
+.review-box {
+    min-width: 290px;
+
+    background: #F4FAFF;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.review-details {
+    background-color: #fff;
+    position: relative;
+    width: 250px;
+
+
+}
+
+.review-details h1 {
+
+
+    font-size: 27px;
+}
+
+.review-sec-1 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-dec h3 {
+    font-size: 16px;
+}
+
+.rating-img {
+
+    margin-left: auto;
+    margin-right: 12px;
+    width: 41px;
+    height: 70px;
+}
+
+.gallery-image img {
+
+    /* border: 1px solid black; */
+    border-radius: 15%;
+}
+
+.payment-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.down-qr,
+.share-qr {
+    margin-top: 30px;
+    border: 1px solid #00fffc;
+    border-radius: 25px;
+    width: 125px;
+    height: 39px;
+    color: #142A54;
+    background-color: #00FFFC;
+
+
+}
+
+.share-qr {
+
+    margin-left: 30px;
+    margin-top: 44px;
+
+}
+
+.other-payment-col-388 {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.other-payment div {
+    margin: 30px 72px auto;
+
+}
+
+.containerWWR {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px !important;
+    height: 300px;
+    max-width: 100%;
+    background-color: red;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.col-md-6 {
+	padding-left: 53px;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+
+footer {
+    color: white;
+    background: #224487;
+    padding: 50px 0;
+    font-size: 16px;
+    position: relative;
+    z-index: auto;
+    font-family: 'Abhaya Libre';
+
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer-col {
+    /* flex-basis: calc(33.33% - 20px); */
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.social-media-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media-icons a {
+    color: white;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media-icons a:hover {
+    color: #00FFFC;
+}
+
+.F-page {
+
+    list-style: none;
+    padding: 0px !important;
+}
+
+.F-page li a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.F-page li a:hover {
+    color: red;
+}
+.container-map iframe{
+    border:2px solid black;
+    border-radius: 15px;
+}
