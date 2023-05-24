@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail | Business-card</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <form action="#" class="form">
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Basic Information</h1>
+                <div class="form-step form-step-active col-md-7 mt-3">
+
+                    <div class="input-group">
+                        <lable class="C-Name"></lable>
+                        <input type="text" name="Company Name" id="C-Name" placeholder="Company Name">
+                    </div>
+                    <div class="input-group">
+                        <lable class="what-you-do"></lable>
+                        <input type="text" name="What-you-do" id="what-you-do" placeholder="What You Do">
+                    </div>
+
+                </div>
+
+
+                <div class="right-1 col-md-5 pt-5">
+                    <div class="C-img">
+                        <label for="uploadImage">
+                            <img id="userImage" src="/card tamplate/img/7309681.jpg" alt="">
+                        </label>
+                        <input type="file" id="uploadImage" accept="image/*" onchange="handleImageUpload(event)">
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="next-button mt-5">
+                    <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- secound form -->
+
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Contact Details</h1>
+                <div class="form-step form-step-active col-md-6 mt-3">
+
+                    <div class="input-group">
+                        <lable class="C-Phone"></lable>
+                        <input type="tel" name="C-Phone" id="C-Phone" placeholder="Phone No.">
+                    </div>
+                    <div class="input-group">
+                        <lable class="C-Email"></lable>
+                        <input type="email" name="C-Email" id="C-Email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <lable class="C-WPhone"></lable>
+                        <input type="tel" name="C-WPhone" id="C-WPhone" placeholder="Whatsapp No.">
+                    </div>
+
+
+
+                </div>
+
+                <div class="form-step form-step-active col-md-6 mt-3">
+                    <div class="input-group">
+                        <lable class="C-Add"></lable>
+                        <input type="text-area" name="C-Add" id="C-Add" placeholder="Address">
+                    </div>
+                    <div class="input-group">
+                        <lable class="C-Insta"></lable>
+                        <input type="url" name="C-Insta" id="C-Insta" placeholder="Instagram URL">
+                    </div>
+                    <div class="input-group">
+                        <lable class="C-Face"></lable>
+                        <input type="url" name="C-Face" id="C-Face" placeholder="Facebook URL">
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- <div class="right col-md-5 ">
+                         <div class="input-group">
+                            <lable class="C-Add"></lable>
+                            <input type="text-area" name="C-Add" id="C-Add" placeholder="Address">
+                        </div>
+                    </div> -->
+
+
+
+                <div class="btn-group mt-5">
+                    <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous< /a>
+                            <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- product  form -->
+
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Product Information</h1>
+                <div class="form-step form-step-active col-md-7 mt-3">
+
+                    <div class="input-group">
+                        <lable class="C-Prod"></lable>
+                        <input type="text" name="C-Prod" id="C-Prod" placeholder="Product Name">
+                    </div>
+                    <div class="input-group">
+                        <lable class="C-Prod-Dec"></lable>
+                        <input type="text-area" name="C-Prod-Dec" id="C-Prod-Dec" placeholder="Product Desccription">
+                    </div>
+
+                    <div class="input-group">
+                        <lable class="C-Prod-Price"></lable>
+                        <input type="number" inputmode="numeric" name="C-Prod-Price" id="C-Prod-Price"
+                            placeholder="Price In Indian Rupee (ex.4500)">
+                    </div>
+
+                </div>
+
+                <div class="right-1 col-md-5 pt-5">
+                    <div class="C-P-img">
+                        <label for="uploadImage">
+                            <img id="Pro-Image" src="/card tamplate/img/7309681.jpg" alt="">
+                        </label>
+                        <input type="file" id="pImage" accept="image/*" onchange="handleImageUpload(event)">
+                    </div>
+                </div>
+
+                <div class="btn-group mt-5">
+                    <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous< /a>
+                            <a href="#" class="btn btn-add width-50 ml-auto">Add+</a>
+                            <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- gallery section -->
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Add Gallery Photos</h1>
+
+
+                <div class="right col-md-12 pt-5">
+                    <div class="C-G-img">
+                        <label for="uploadImage">
+                            <img id="G-Image" src="/card tamplate/img/7309681.jpg" alt="">
+                        </label>
+                        <input type="file" id="gImage" accept="image/*" onchange="handleImageUpload(event)">
+                    </div>
+                </div>
+
+                <div class="btn-group mt-5">
+                    <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous</a>
+                    <a href="#" class="btn btn-add width-50 ml-auto">Add+</a>
+                    <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+
+                </div>
+            </div>
+        </div>
+
+
+                <!-- payment details -->
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Payment Details</h1>
+
+                <div class="form-step mt-5">
+                <div class="input-group">
+                    <lable class="C-Qr"></lable>
+                    <input type="url" name="C-Qr" id="C-Qr" placeholder="UPI Id">
+                </div>
+                </div>
+
+                <div class="right col-md-12 pt-5">
+                    <div class="C-Qr-img">
+                        <label for="uploadImage">
+                            <img id="Qr-Image" src="/card tamplate/img/7309681.jpg" alt="">
+                        </label>
+                        <input type="file" id="QrImage" accept="image/*" onchange="handleImageUpload(event)">
+                    </div>
+                </div>
+
+                <div class="btn-group mt-5">
+                    <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous</a>
+
+                    <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- describe your company  -->
+
+
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Describe your company</h1>
+                <div class="form-step C-dec form-step-active col-md-7 mt-3">
+
+                    <div class="input-group ">
+                        <lable class="C-dec"></lable>
+                        <textarea type="text-area" name="C-dec" id="C-dec" placeholder="Write about your company"></textarea>
+                    </div>
+
+
+                </div>
+
+                <div class="right-1 col-md-5 pt-5">
+                    <div class="C-P-img">
+                        <label for="uploadImage">
+                            <img id="Pro-Image" src="/card tamplate/img/7309681.jpg" alt="">
+                        </label>
+                        <input type="file" id="pImage" accept="image/*" onchange="handleImageUpload(event)">
+                    </div>
+                </div>
+
+                <div class="btn-group mt-5">
+                    <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous</a>
+
+                            <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- reviews section -->
+
+
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <h1 class="main-heading text-center">Reviews</h1>
+                <div class="form-step C-dec form-step-active col-md-7 mt-3">
+
+                    <div class="input-group">
+                        <lable class="C-Rname"></lable>
+                        <input type="text" name="C-Rname" id="C-Rname" placeholder="Customer Name">
+                    </div>
+                    <div class="input-group ">
+                        <lable class="C-Prod"></lable>
+                        <textarea type="text-area" name="C-Prod" id="C-Prod" placeholder="Write about your company"></textarea>
+                    </div>
+
+                    <!-- <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5"><img src="/card tamplate/img/🦆 icon _star_.svg" alt=""></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"><img src="/card tamplate/img/🦆 icon _star_.svg" alt=""></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"><img src="/card tamplate/img/🦆 icon _star_.svg" alt=""></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"><img src="/card tamplate/img/🦆 icon _star_.svg" alt=""></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"><img src="/card tamplate/img/🦆 icon _star_.svg" alt=""></label>
+                      </div> -->
+
+
+                </div>
+
+                <div class="right-1 col-md-5 pt-5">
+                    <div class="C-P-img">
+                        <label for="uploadImage">
+                            <img id="Pro-Image" src="/card tamplate/img/7309681.jpg" alt="">
+                        </label>
+                        <input type="file" id="pImage" accept="image/*" onchange="handleImageUpload(event)">
+                    </div>
+                </div>
+
+                <div class="btn-group mt-5">
+                    <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous</a>
+                            <a href="#" class="btn btn-add width-50 ml-auto">Add+</a>
+                            <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+
+
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
