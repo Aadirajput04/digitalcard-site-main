@@ -198,6 +198,12 @@ color: #FFFFFF;
 
 
 }
+
+.Gallery-Image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #uploadImage,#pImage,#gImage,#PyImage,#QrImage{
     display: none;
 }
