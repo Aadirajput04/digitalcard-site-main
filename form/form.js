@@ -48,3 +48,19 @@ function handleImageUpload(event) {
 
     reader.readAsDataURL(file);
 }
+
+
+
+
+
+// rating
+
+  $(document).ready(function() {
+    $('form').submit(function(event) {
+      event.preventDefault();
+      var rating = $('input[name="rating"]:checked').val();
+      // Process the rating value (e.g., send it to the server via AJAX)
+      console.log("Rating: " + rating);
+    });
+  });
+

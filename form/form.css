@@ -197,36 +197,41 @@ color: #FFFFFF;
 
 }
 
+/* rating css */
+
+.rating {
+  border: none;
+  float: left;
+  padding-right: 9.5rem;
+}
+
+.rating input {
+  display: none;
+}
+
+ .rating-lable{
+  margin-right: 14.5rem;
+  color: white;
+}
+
+
+.rating {
+  border: none;
+  direction: rtl; /* Set direction to right-to-left */
+}
 
 
 
-/* .rating {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    text-align:left;
-    background-color: white;
-  }
+.rating label {
+  color: #ddd;
+  font-size: 30px;
+  display: inline-block;
+  transform: scale(-1, 1); /* Flip the stars horizontally */
+  margin-left: -2px; /* Adjust the spacing between stars */
+}
 
-  .rating input {
-    display: none;
-  }
-
-  .rating label {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-image: url('/card tamplate/img/icon _star_.svg');
-    background-size: cover;
-  }
-
-  .rating label:before {
-    content: "/card tamplate/img/ icon _star_.svg";
-    color: transparent;
-  }
-
-  .rating input:checked ~ label:before {
-    color: gold;
-  } */
+.rating input:checked ~ label {
+  color: #ffca08;
+}
 
 
