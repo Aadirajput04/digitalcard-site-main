@@ -170,6 +170,15 @@ color: #FFFFFF;
     height:11rem;
 }
 
+.C-R-img img {
+  border-radius: 5%;
+  width: 100%;
+  height: auto;
+}
+.C-R-img {
+  width: 11rem;
+  height:11rem;
+}
 .C-G-img img,.C-Py-img img,.C-Qr-img img{
     border-radius: 5%;
     width: 50%;
