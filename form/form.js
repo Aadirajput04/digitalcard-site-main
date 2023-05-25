@@ -64,3 +64,38 @@ function handleImageUpload(event) {
     });
   });
 
+
+
+
+
+
+  // next and prev button
+
+
+
+
+
+
+$(document).ready(function() {
+    var currentStep = 1;
+    var totalSteps = $('.container').length;
+
+    $('.container').hide(); // Hide all containers initially
+    $('.container:first').show(); // Show the first container
+
+    $('.btn-next').click(function() {
+      if (currentStep < totalSteps) {
+        $('.container').hide(); // Hide all containers
+        $('.container:eq(' + currentStep + ')').show(); // Show the next container
+        currentStep++;
+      }
+    });
+
+    $('.btn-prev').click(function() {
+      if (currentStep > 1) {
+        $('.container').hide(); // Hide all containers
+        $('.container:eq(' + (currentStep - 2) + ')').show(); // Show the previous container
+        currentStep--;
+      }
+    });
+  });

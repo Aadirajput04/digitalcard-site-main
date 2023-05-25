@@ -67,6 +67,7 @@ color: #FFFFFF;
     color: white;
     padding: 0.5rem;
     width: 75%;
+
   }
   .C-dec textarea{
     border: none;
@@ -96,10 +97,16 @@ color: #FFFFFF;
 	border-radius: 1.5rem;
 	padding: 1.5rem;
 	background: #142A54;
-    /* position: fixed; */
+    position: fixed;
     overflow-y: auto;
 }
 
+
+#lableimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* detials from css */
@@ -165,7 +172,7 @@ color: #FFFFFF;
 
 .C-G-img img,.C-Py-img img,.C-Qr-img img{
     border-radius: 5%;
-    width: 100%;
+    width: 50%;
     height: 70%;
     object-fit: contain;
     cursor: pointer;
