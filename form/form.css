@@ -116,7 +116,7 @@ color: #FFFFFF;
     color: white;
 }
 
-.btn.btn-next,.btn.btn-prev,.btn.btn-add{
+.btn.btn-next,.btn.btn-prev,.btn.btn-add,.btn.btn-sub{
     box-sizing: border-box;
 
     /* Auto layout */
@@ -140,7 +140,7 @@ color: #FFFFFF;
     flex-grow: 0;
     color: white;
 }
-.btn.btn-prev:hover,.btn.btn-next:hover,.btn.btn-add:hover {
+.btn.btn-prev:hover,.btn.btn-next:hover,.btn.btn-add:hover ,.btn.btn-sub:hover{
     background-color:white;
     color:black;
   }
