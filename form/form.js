@@ -1,143 +1,144 @@
-// company logo image change
-
+//first image
 
 document.addEventListener("DOMContentLoaded", function() {
-    var uploadImageInput = document.getElementById("uploadImage");
-    uploadImageInput.addEventListener("change", handleImageUpload);
+  var uploadImageInput = document.getElementById("uploadImage");
+  var userImageElement = document.getElementById("userImage");
 
-    function handleImageUpload(event) {
-        var file = event.target.files[0];
-        var reader = new FileReader();
+  userImageElement.addEventListener("click", function() {
+    uploadImageInput.click();
+  });
 
-        reader.onload = function(e) {
-            var imageElement = document.getElementById("userImage");
-            if (file) {
-                imageElement.src = e.target.result;
-            } else {
-                imageElement.src = "/card tamplate/img/7309681.jpg";
-            }
-        }
+  uploadImageInput.addEventListener("change", function(event) {
+    var file = event.target.files[0];
+    var reader = new FileReader();
 
-        reader.readAsDataURL(file);
+    reader.onload = function(e) {
+      userImageElement.src = e.target.result;
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
     }
+  });
 });
 
 
 
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    var uploadImageInput = document.getElementById("uploadImage");
-    uploadImageInput.addEventListener("change", handleImageUpload);
-
-    function handleImageUpload(event) {
-        var file = event.target.files[0];
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-            var imageElement = document.getElementById("Pro-Image");
-            if (file) {
-                imageElement.src = e.target.result;
-            } else {
-                imageElement.src = "/card tamplate/img/7309681.jpg";
-            }
-        }
-
-        reader.readAsDataURL(file);
-    }
-});
-
-
-
-
-
+// secont image
 
 document.addEventListener("DOMContentLoaded", function() {
-    var uploadImageInput = document.getElementById("uploadImage");
-    uploadImageInput.addEventListener("change", handleImageUpload);
+    var pImageInput = document.getElementById("pImage");
+    var proImageElement = document.getElementById("Pro-Image");
 
-    function handleImageUpload(event) {
-        var file = event.target.files[0];
-        var reader = new FileReader();
+    proImageElement.addEventListener("click", function() {
+      pImageInput.click();
+    });
 
-        reader.onload = function(e) {
-            var imageElement = document.getElementById("G-Image");
-            if (file) {
-                imageElement.src = e.target.result;
-            } else {
-                imageElement.src = "/card tamplate/img/7309681.jpg";
-            }
-        }
+    pImageInput.addEventListener("change", function(event) {
+      var file = event.target.files[0];
+      var reader = new FileReader();
 
+      reader.onload = function(e) {
+        proImageElement.src = e.target.result;
+      };
+
+      if (file) {
         reader.readAsDataURL(file);
-    }
-});
-document.addEventListener("DOMContentLoaded", function() {
-    var uploadImageInput = document.getElementById("uploadImage");
-    uploadImageInput.addEventListener("change", handleImageUpload);
+      }
+    });
+  });
 
-    function handleImageUpload(event) {
-        var file = event.target.files[0];
-        var reader = new FileReader();
+// third image
 
-        reader.onload = function(e) {
-            var imageElement = document.getElementById("Qr-Image");
-            if (file) {
-                imageElement.src = e.target.result;
-            } else {
-                imageElement.src = "/card tamplate/img/7309681.jpg";
-            }
-        }
+  document.addEventListener("DOMContentLoaded", function() {
+    var gImageInput = document.getElementById("gImage");
+    var gImageElement = document.getElementById("G-Image");
 
+    gImageElement.addEventListener("click", function() {
+      gImageInput.click();
+    });
+
+    gImageInput.addEventListener("change", function(event) {
+      var file = event.target.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        gImageElement.src = e.target.result;
+      };
+
+      if (file) {
         reader.readAsDataURL(file);
-    }
-});
+      }
+    });
+  });
 
 
+//fourth image
 
-document.addEventListener("DOMContentLoaded", function() {
-    var uploadImageInput = document.getElementById("uploadImage");
-    uploadImageInput.addEventListener("change", handleImageUpload);
+  document.addEventListener("DOMContentLoaded", function() {
+    var qrImageInput = document.getElementById("QrImage");
+    var qrImageElement = document.getElementById("Qr-Image");
 
-    function handleImageUpload(event) {
-        var file = event.target.files[0];
-        var reader = new FileReader();
+    qrImageElement.addEventListener("click", function() {
+      qrImageInput.click();
+    });
 
-        reader.onload = function(e) {
-            var imageElement = document.getElementsByClassName("Pro2-Image")[0];
-            if (e.target.result) {
-                imageElement.src = e.target.result;
-            } else {
-                imageElement.src = "/card tamplate/img/7309681.jpg";
-            }
-        }
+    qrImageInput.addEventListener("change", function(event) {
+      var file = event.target.files[0];
+      var reader = new FileReader();
 
+      reader.onload = function(e) {
+        qrImageElement.src = e.target.result;
+      };
+
+      if (file) {
         reader.readAsDataURL(file);
-    }
+      }
+    });
+  });
+
+
+
+  //fifth image
+
+// Get the input element and the image element using their classes
+const inputFile = document.querySelector('.pro3-img');
+const img = document.querySelector('.Pro3-Image');
+
+// Add an event listener to the image element
+img.addEventListener('click', () => {
+  inputFile.click(); // Simulate a click on the file input element
 });
 
+// Add an event listener for the input change event
+inputFile.addEventListener('change', handleImageUpload);
 
-document.addEventListener("DOMContentLoaded", function() {
-    var uploadImageInput = document.getElementById("uploadImage");
-    uploadImageInput.addEventListener("change", handleImageUpload);
+// Function to handle the image upload
+function handleImageUpload(event) {
+  const file = event.target.files[0];
 
-    function handleImageUpload(event) {
-        var file = event.target.files[0];
-        var reader = new FileReader();
+  // Create a file reader
+  const reader = new FileReader();
 
-        reader.onload = function(e) {
-            var imageElement = document.getElementsByClassName("rew-Img")[0];
-            if (e.target.result) {
-                imageElement.src = e.target.result;
-            } else {
-                imageElement.src = "/card tamplate/img/7309681.jpg";
-            }
-        }
+  // Set up the file reader onload function
+  reader.onload = function (e) {
+    img.src = e.target.result;
+  };
 
-        reader.readAsDataURL(file);
-    }
-});
+  // Read the image file as a data URL
+  reader.readAsDataURL(file);
+}
+
+
+
+
+
+
+  //sixth image
+
+
+
+
 
 
 
