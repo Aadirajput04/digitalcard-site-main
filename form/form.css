@@ -261,4 +261,15 @@ color: #FFFFFF;
   color: #ffca08;
 }
 
+#previousDetailsList{
+  color: white;
+  cursor: pointer;
+}
+
+
+#PreviousHeading{
+  color: white;
+  font-size: 1rem;
+}
+
 
