@@ -140,7 +140,7 @@ color: #FFFFFF;
     flex-grow: 0;
     color: white;
 }
-.btn.btn-prev:hover,.btn.btn-next:hover,.btn.btn-add:hover ,.btn.btn-sub:hover{
+.btn.btn-prev:hover,.btn.btn-next:hover,.btn.btn-add:hover {
     background-color:white;
     color:black;
   }
@@ -273,3 +273,11 @@ color: #FFFFFF;
 }
 
 
+.btn.btn-sub.width-50.ml-auto {
+	background-color: red;
+	border: 1px;
+}
+.btn.btn-sub.width-50.ml-auto:hover {
+	background-color:white;
+	color: black;
+}
