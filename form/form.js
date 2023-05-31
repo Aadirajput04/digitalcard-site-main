@@ -207,3 +207,67 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// data fatching ```javascript--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+function handleSubmit() {
+
+
+    //main function
+    const name = document.getElementById('C-Name').value;
+    const wyd = document.getElementById('what-you-do').value;
+    const fileInput = document.getElementById('uploadImage');
+
+
+
+    //main function end
+
+    if (fileInput.files && fileInput.files[0]) {
+      const reader = new FileReader();
+
+      reader.onload = function(event) {
+        const logo = event.target.result;
+
+        localStorage.setItem('companyName', name);
+        localStorage.setItem('companyWyd', wyd);
+        localStorage.setItem('companyLogo', logo);
+
+
+      };
+
+      reader.readAsDataURL(fileInput.files[0]);
+    } else {
+      // If no image is selected, store the other data and redirect
+
+
+
+      /// main
+
+
+
+
+      localStorage.setItem('companyName', name);
+      localStorage.setItem('companyWyd', wyd);
+
+
+      //main end
+
+
+    }
+  }

@@ -64,7 +64,7 @@
 
 
 .home .profile-manu .name h1 {
-    padding: 70px 0px 0px 100px;
+    padding: 28px 0px 0px 100px;
 }
 
 .home .profile-manu .social {
@@ -416,4 +416,10 @@ li {
 .container-map iframe{
     border:2px solid black;
     border-radius: 15px;
+}
+
+
+#userImageT{
+
+    border-radius: 50%;
 }

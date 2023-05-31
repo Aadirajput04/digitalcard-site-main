@@ -45,3 +45,47 @@ window.addEventListener("scroll", function() {
     });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//data featch javascript================================================
+
+
+
+window.addEventListener("load", ()=>{
+  const name = localStorage.getItem("companyName");
+  const wyd = localStorage.getItem("companyWyd");
+  const logo = localStorage.getItem("companyLogo");
+
+
+
+
+
+
+  document.getElementById("C-NameT").innerHTML = name;
+  document.getElementById("what-you-doT").innerHTML = wyd;
+  document.getElementById("userImageT").src = logo;
+})
+
+
