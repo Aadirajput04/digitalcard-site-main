@@ -270,4 +270,22 @@ function handleSubmit() {
 
 
     }
+
+
+    const Add = document.getElementById('C-Add').value;
+
+
+
+
+
+
+
+
+    localStorage.setItem('companyAdd', Add);
+
+
+
+
+
+
   }

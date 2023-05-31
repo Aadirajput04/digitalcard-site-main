@@ -77,6 +77,7 @@ window.addEventListener("load", ()=>{
   const name = localStorage.getItem("companyName");
   const wyd = localStorage.getItem("companyWyd");
   const logo = localStorage.getItem("companyLogo");
+  const Add = localStorage.getItem("companyAdd");
 
 
 
@@ -86,6 +87,7 @@ window.addEventListener("load", ()=>{
   document.getElementById("C-NameT").innerHTML = name;
   document.getElementById("what-you-doT").innerHTML = wyd;
   document.getElementById("userImageT").src = logo;
+  document.getElementById("C-AddT").innerHTML = Add;
 })
 
 
