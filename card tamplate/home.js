@@ -127,4 +127,17 @@ window.addEventListener("load", () => {
 
 
 
+const Add = localStorage.getItem("companyAdd");
+document.getElementById("C-AddT").innerHTML = Add;
+
+const addressIcon = document.getElementById("C-AddressIcon");
+addressIcon.addEventListener("click", () => {
+  const encodedAddress = encodeURIComponent(Add);
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+  window.open(googleMapsUrl, "_blank");
+});
+
+
+
+
 
