@@ -312,6 +312,18 @@ function handleSubmit() {
 
 
 
+    //// WHATSAPP JAVASCRIPT STARTING
+
+    const whatsappNumber = document.getElementById('C-WPhone').value;
+    localStorage.setItem('companyWhatsAppNumber', whatsappNumber);
+
+
+
+
+    //// WHATSAPP URL JAVASCRIPT ENDING
+
+
+
 
 
 }

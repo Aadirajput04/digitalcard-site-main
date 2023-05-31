@@ -103,6 +103,19 @@ window.addEventListener("load", () => {
 
 
 
+
+
+ //// WHATSAPP URL JAVASCRIPT STARTING=================================
+
+  const whatsappNumber = localStorage.getItem("companyWhatsAppNumber");
+  const whatsappLink = document.getElementById("C-WPhoneT");
+  whatsappLink.href = `https://web.whatsapp.com/send?phone=${whatsappNumber}`;
+
+
+
+ /////WHATSAPP URL JAVASCRIPT ENDING ===================================
+
+
   document.getElementById("C-NameT").innerHTML = name;
   document.getElementById("what-you-doT").innerHTML = wyd;
   document.getElementById("userImageT").src = logo;
