@@ -80,6 +80,32 @@ window.addEventListener("load", () => {
   const Add = localStorage.getItem("companyAdd");
   const Phone = localStorage.getItem("companyPhone");
   const Email = localStorage.getItem("companyEmail");
+  const CustProd = localStorage.getItem("companyCustProd");
+  const CustProdDec= localStorage.getItem("companyCustProdDec");
+  const CustProdPrice= localStorage.getItem("companyCustProdPrice");
+
+
+
+
+
+
+  document.getElementById("C-NameT").innerHTML = name;
+  document.getElementById("what-you-doT").innerHTML = wyd;
+  document.getElementById("userImageT").src = logo;
+  document.getElementById("C-AddT").innerHTML = Add;
+  document.getElementById("C-PhoneT").innerHTML = Phone;
+  document.getElementById("C-EmailT").innerHTML = Email;
+  document.getElementById("C-ProdT").innerHTML = CustProd;
+  document.getElementById("C-Prod-DecT").innerHTML = CustProdDec;
+  document.getElementById("C-Prod-PriceT").innerHTML = CustProdPrice;
+
+
+
+
+
+
+
+
 
   //// INSTAGRAME URL JAVASCRIPT STARTING=================================
 
@@ -116,12 +142,6 @@ window.addEventListener("load", () => {
  /////WHATSAPP URL JAVASCRIPT ENDING ===================================
 
 
-  document.getElementById("C-NameT").innerHTML = name;
-  document.getElementById("what-you-doT").innerHTML = wyd;
-  document.getElementById("userImageT").src = logo;
-  document.getElementById("C-AddT").innerHTML = Add;
-  document.getElementById("C-PhoneT").innerHTML = Phone;
-  document.getElementById("C-EmailT").innerHTML = Email;
 
 })
 
@@ -171,4 +191,12 @@ emailIcon.addEventListener("click", () => {
 ////  EMAIL APPLICATION REDIRECT TO GOOGLE MAP JAVASCRIPT ENDING ===================================
 
 
+
+
+
+
+
+//  RUPEE ICON SHOW
+const price = document.getElementById("C-Prod-PriceT").textContent;
+console.log(price); // Output: 1245
 

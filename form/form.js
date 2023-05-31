@@ -275,6 +275,9 @@ function handleSubmit() {
     const Add = document.getElementById('C-Add').value;
     const Phone = document.getElementById('C-Phone').value;
     const Email = document.getElementById('C-Email').value;
+    const CustProd = document.getElementById('C-Prod').value;
+    const CustProdDec = document.getElementById('C-Prod-Dec').value;
+    const CustProdPrice = document.getElementById('C-Prod-Price').value;
 
 
 
@@ -284,6 +287,9 @@ function handleSubmit() {
     localStorage.setItem('companyAdd', Add);
     localStorage.setItem('companyPhone', Phone);
     localStorage.setItem('companyEmail', Email);
+    localStorage.setItem('companyCustProd', CustProd);
+    localStorage.setItem('companyCustProdDec', CustProdDec);
+    localStorage.setItem('companyCustProdPrice', CustProdPrice);
 
 
 
@@ -314,7 +320,7 @@ function handleSubmit() {
 
 
 
-    
+
 
     //// WHATSAPP JAVASCRIPT STARTING
 
