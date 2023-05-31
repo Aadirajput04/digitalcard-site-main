@@ -73,6 +73,7 @@
     float: left;
     row-gap: 5px;
     padding-top: 20px;
+    align-items: center;
 
 }
 
@@ -102,7 +103,13 @@
     color: #142A54;
     font-size: 43px;
 }
-.home .right .container h2,.reviews h1,.gallery h1,.payment h2,.map h2,.wwr h2{
+
+.home .right .container h2,
+.reviews h1,
+.gallery h1,
+.payment h2,
+.map h2,
+.wwr h2 {
     font-size: 38px;
 }
 
@@ -324,8 +331,9 @@
     border-radius: 15px;
 
 }
+
 .col-md-6 {
-	padding-left: 53px;
+    padding-left: 53px;
 }
 
 
@@ -413,13 +421,14 @@ li {
 .F-page li a:hover {
     color: red;
 }
-.container-map iframe{
-    border:2px solid black;
+
+.container-map iframe {
+    border: 2px solid black;
     border-radius: 15px;
 }
 
 
-#userImageT{
+#userImageT {
 
     border-radius: 50%;
 }

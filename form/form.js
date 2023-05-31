@@ -239,34 +239,34 @@ function handleSubmit() {
     //main function end
 
     if (fileInput.files && fileInput.files[0]) {
-      const reader = new FileReader();
+        const reader = new FileReader();
 
-      reader.onload = function(event) {
-        const logo = event.target.result;
+        reader.onload = function (event) {
+            const logo = event.target.result;
+
+            localStorage.setItem('companyName', name);
+            localStorage.setItem('companyWyd', wyd);
+            localStorage.setItem('companyLogo', logo);
+
+
+        };
+
+        reader.readAsDataURL(fileInput.files[0]);
+    } else {
+        // If no image is selected, store the other data and redirect
+
+
+
+        /// main
+
+
+
 
         localStorage.setItem('companyName', name);
         localStorage.setItem('companyWyd', wyd);
-        localStorage.setItem('companyLogo', logo);
 
 
-      };
-
-      reader.readAsDataURL(fileInput.files[0]);
-    } else {
-      // If no image is selected, store the other data and redirect
-
-
-
-      /// main
-
-
-
-
-      localStorage.setItem('companyName', name);
-      localStorage.setItem('companyWyd', wyd);
-
-
-      //main end
+        //main end
 
 
     }
@@ -300,5 +300,18 @@ function handleSubmit() {
 
 
 
+    //// FACEBOOK JAVASCRIPT STARTING
 
-  }
+    const faceUrl = document.getElementById('C-Face').value;
+    localStorage.setItem('companyFaceUrl', faceUrl);
+
+
+
+
+    //// FACEBOOK URL JAVASCRIPT ENDING
+
+
+
+
+
+}

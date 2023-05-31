@@ -27,7 +27,7 @@
 
 
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   var footer = document.querySelector("footer");
   var footerPosition = footer.getBoundingClientRect().top;
   var windowHeight = window.innerHeight;
@@ -35,12 +35,12 @@ window.addEventListener("scroll", function() {
 
   if (footerPosition < windowHeight) {
     // Footer is visible in the viewport
-    elementsAboveFooter.forEach(function(element) {
+    elementsAboveFooter.forEach(function (element) {
       element.style.paddingBottom = " 80px";
     });
   } else {
     // Footer is not visible in the viewport
-    elementsAboveFooter.forEach(function(element) {
+    elementsAboveFooter.forEach(function (element) {
       element.style.paddingBottom = "0";
     });
   }
@@ -73,7 +73,7 @@ window.addEventListener("scroll", function() {
 
 
 
-window.addEventListener("load", ()=>{
+window.addEventListener("load", () => {
   const name = localStorage.getItem("companyName");
   const wyd = localStorage.getItem("companyWyd");
   const logo = localStorage.getItem("companyLogo");
@@ -81,7 +81,7 @@ window.addEventListener("load", ()=>{
   const Phone = localStorage.getItem("companyPhone");
   const Email = localStorage.getItem("companyEmail");
 
-//// INSTAGRAME URL JAVASCRIPT STARTING=================================
+  //// INSTAGRAME URL JAVASCRIPT STARTING=================================
 
   const instaUrl = localStorage.getItem("companyInstaUrl");
   const instaLink = document.getElementById("C-InstaT");
@@ -89,6 +89,16 @@ window.addEventListener("load", ()=>{
 
 
   /////INSTAGRAME URL JAVASCRIPT ENDING ===================================
+
+
+  //// FACEBOOK URL JAVASCRIPT STARTING=================================
+
+  const faceUrl = localStorage.getItem("companyFaceUrl");
+  const faceLink = document.getElementById("C-FaceT");
+  faceLink.href = faceUrl;
+
+
+  /////FACEBOOK URL JAVASCRIPT ENDING ===================================
 
 
 
