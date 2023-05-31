@@ -432,3 +432,8 @@ li {
 
     border-radius: 50%;
 }
+
+
+#C-AddressIcon:hover ,#C-PhoneIcon:hover,#C-EmailIcon:hover{
+    color: #d14848;
+}

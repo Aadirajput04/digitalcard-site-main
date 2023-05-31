@@ -156,3 +156,19 @@ phoneIcon.addEventListener("click", () => {
 //// PHONE NUMBER REDIRECT TO GOOGLE MAP JAVASCRIPT ENDING ===================================
 
 
+////  EMAIL APPLICATION REDIRECT TO GOOGLE MAP JAVASCRIPT STARTING ===================================
+
+const Email = localStorage.getItem("companyEmail");
+document.getElementById("C-EmailT").innerHTML = Email;
+
+const emailIcon = document.getElementById("C-EmailIcon");
+emailIcon.addEventListener("click", () => {
+  window.location.href = `mailto:${Email}`;
+});
+
+
+
+////  EMAIL APPLICATION REDIRECT TO GOOGLE MAP JAVASCRIPT ENDING ===================================
+
+
+
