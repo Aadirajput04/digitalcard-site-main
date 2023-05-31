@@ -125,7 +125,7 @@ window.addEventListener("load", () => {
 
 })
 
-
+//// ADDRESS REDIRECT TO GOOGLE MAP JAVASCRIPT STARTING ===================================
 
 const Add = localStorage.getItem("companyAdd");
 document.getElementById("C-AddT").innerHTML = Add;
@@ -138,6 +138,21 @@ addressIcon.addEventListener("click", () => {
 });
 
 
+//// ADDRESS REDIRECT TO GOOGLE MAP JAVASCRIPT ENDING ===================================
 
+
+//// PHONE NUMBER REDIRECT TO GOOGLE MAP JAVASCRIPT STARTING ===================================
+
+const Phone = localStorage.getItem("companyPhone");
+document.getElementById("C-PhoneT").innerHTML = Phone;
+
+const phoneIcon = document.getElementById("C-PhoneIcon");
+phoneIcon.addEventListener("click", () => {
+  window.location.href = `tel:${Phone}`;
+});
+
+
+
+//// PHONE NUMBER REDIRECT TO GOOGLE MAP JAVASCRIPT ENDING ===================================
 
 
