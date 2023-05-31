@@ -273,8 +273,8 @@ function handleSubmit() {
 
 
     const Add = document.getElementById('C-Add').value;
-
-
+    const Phone = document.getElementById('C-Phone').value;
+    const Email = document.getElementById('C-Email').value;
 
 
 
@@ -282,7 +282,20 @@ function handleSubmit() {
 
 
     localStorage.setItem('companyAdd', Add);
+    localStorage.setItem('companyPhone', Phone);
+    localStorage.setItem('companyEmail', Email);
 
+
+
+    //// INSTAGRAM URL JAVASCRIPT STARTING
+
+    const instaUrl = document.getElementById('C-Insta').value;
+    localStorage.setItem('companyInstaUrl', instaUrl);
+
+
+
+
+    //// INSTAGRAM URL JAVASCRIPT ENDING
 
 
 

@@ -78,8 +78,17 @@ window.addEventListener("load", ()=>{
   const wyd = localStorage.getItem("companyWyd");
   const logo = localStorage.getItem("companyLogo");
   const Add = localStorage.getItem("companyAdd");
+  const Phone = localStorage.getItem("companyPhone");
+  const Email = localStorage.getItem("companyEmail");
+
+//// INSTAGRAME URL JAVASCRIPT STARTING=================================
+
+  const instaUrl = localStorage.getItem("companyInstaUrl");
+  const instaLink = document.getElementById("C-InstaT");
+  instaLink.href = instaUrl;
 
 
+  /////INSTAGRAME URL JAVASCRIPT ENDING ===================================
 
 
 
@@ -88,6 +97,11 @@ window.addEventListener("load", ()=>{
   document.getElementById("what-you-doT").innerHTML = wyd;
   document.getElementById("userImageT").src = logo;
   document.getElementById("C-AddT").innerHTML = Add;
+  document.getElementById("C-PhoneT").innerHTML = Phone;
+  document.getElementById("C-EmailT").innerHTML = Email;
+
 })
+
+
 
 
