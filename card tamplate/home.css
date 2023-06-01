@@ -5,6 +5,9 @@
     font-family: 'Abhaya Libre';
 
 }
+body{
+    width: 100%;
+}
 
 
 .home {
@@ -147,7 +150,7 @@
     margin-left: -11px !important;
     margin-right: 53px !important;
     overflow: hidden;
-    max-width: 980px !important;
+    /* max-width: 980px !important; */
 }
 
 .home .right .container {
@@ -159,7 +162,7 @@
 .home .right .container h2 {
     padding-top: 25px;
     /* padding-left: 25px; */
-    padding-right: 630px;
+    /* padding-right: 630px; */
 }
 
 /* .border-3{
