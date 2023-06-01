@@ -341,3 +341,36 @@ function handleSubmit() {
 
 
 
+//      MIN AND MAX INPUT FIELD FOE WHAT YOU DO  JAVASCRIPT
+
+const inputField = document.getElementById('what-you-do');
+const errorMsg = document.getElementById('errorMsg');
+const minChars = 150; // Minimum number of characters required
+const maxChars = 550; // Maximum number of characters allowed
+const nextButton = document.getElementById('nextButton');
+
+inputField.addEventListener('input', function() {
+  const charCount = inputField.value.length;
+
+  // Show/hide error message based on character count
+  if (charCount < minChars) {
+    errorMsg.textContent = `Minimum ${minChars} characters required`;
+    errorMsg.style.display = 'block';
+    nextButton.style.pointerEvents = 'none'; // Disable pointer events on the button
+    nextButton.style.opacity = '0.5'; // Reduce opacity of the button
+  } else if (charCount > maxChars) {
+    errorMsg.textContent = `Maximum ${maxChars} characters allowed`;
+    errorMsg.style.display = 'block';
+    nextButton.style.pointerEvents = 'none'; // Disable pointer events on the button
+    nextButton.style.opacity = '0.5'; // Reduce opacity of the button
+  } else {
+    errorMsg.style.display = 'none';
+    nextButton.style.pointerEvents = 'auto'; // Enable pointer events on the button
+    nextButton.style.opacity = '1'; // Restore opacity of the button
+  }
+});
+
+
+
+//      MIN AND MAX INPUT FIELD FOE WHAT YOU DO  JAVASCRIPT END
+
