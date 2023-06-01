@@ -374,3 +374,31 @@ inputField.addEventListener('input', function() {
 
 //      MIN AND MAX INPUT FIELD FOE WHAT YOU DO  JAVASCRIPT END
 
+
+
+
+
+
+
+
+
+
+const fileInput = document.getElementById('pImage');
+
+fileInput.addEventListener('change', (event) => {
+  const reader = new FileReader();
+
+  reader.onload = function (event) {
+    const imageSrc = event.target.result;
+
+    localStorage.setItem('companyCustProdImg', imageSrc);
+
+    // Update the image source in home.html
+    const pImageT = document.getElementById('pImageT');
+    pImageT.src = imageSrc;
+  };
+
+  reader.readAsDataURL(event.target.files[0]);
+});
+
+

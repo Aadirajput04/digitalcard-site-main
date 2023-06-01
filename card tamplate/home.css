@@ -445,3 +445,8 @@ li {
 #C-Prod-PriceT::before {
     content: attr(data-currency);
   }
+
+
+  .pro-up.text-center.px-3.py-3 {
+    padding: 0px !important;
+}

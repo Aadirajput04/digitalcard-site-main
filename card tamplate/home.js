@@ -215,3 +215,25 @@ emailIcon.addEventListener("click", () => {
 const price = document.getElementById("C-Prod-PriceT").textContent;
 console.log(price); // Output: 1245
 
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('companyCustProdImg');
+  const pImageT = document.getElementById('pImageT');
+
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
+
+  // Rest of your code...
+});
