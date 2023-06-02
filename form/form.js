@@ -422,3 +422,32 @@ fileInput.addEventListener('change', (event) => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+const fileInput1 = document.getElementById('Rew-ImageInput');
+
+fileInput1.addEventListener('change', (event) => {
+  const reader = new FileReader();
+
+  reader.onload = function (event) {
+    const imageSrc = event.target.result;
+
+    localStorage.setItem('companyCustProdImg', imageSrc);
+
+    // Update the image source in home.html
+    const pImageT = document.getElementById('Rew-Image1T');
+    pImageT.src = imageSrc;
+  };
+
+  reader.readAsDataURL(event.target.files[0]);
+});

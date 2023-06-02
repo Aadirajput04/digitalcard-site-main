@@ -256,3 +256,17 @@ window.addEventListener('load', () => {
 
   // Rest of your code...
 });
+
+
+
+
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('companyCustProdImg');
+  const pImageT = document.getElementById('Rew-Image1T');
+
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
+
+  // Rest of your code...
+});
