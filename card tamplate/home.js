@@ -99,6 +99,15 @@ window.addEventListener("load", () => {
   const CustProdDec= localStorage.getItem("companyCustProdDec");
   const CustProdPrice= localStorage.getItem("companyCustProdPrice");
 
+  const CustReview1 = localStorage.getItem("companyCustReview1");
+  const CustRewLoc1 = localStorage.getItem("companyCustRewLoc1");
+  const CustRewDec1 = localStorage.getItem("companyCustRewDec1");
+  const CustReview2 = localStorage.getItem("companyCustReview2");
+  const CustRewLoc2 = localStorage.getItem("companyCustRewLoc2");
+  const CustRewDec2 = localStorage.getItem("companyCustRewDec2");
+  const CustReview3 = localStorage.getItem("companyCustReview3");
+  const CustRewLoc3 = localStorage.getItem("companyCustRewLoc3");
+  const CustRewDec3 = localStorage.getItem("companyCustRewDec3");
 
 
 
@@ -113,6 +122,16 @@ window.addEventListener("load", () => {
   document.getElementById("C-ProdT").innerHTML = CustProd;
   document.getElementById("C-Prod-DecT").innerHTML = CustProdDec;
   document.getElementById("C-Prod-PriceT").innerHTML = CustProdPrice;
+
+  document.getElementById("C-Rname1T").innerHTML = CustReview1;
+  document.getElementById("C-Rew-Loc1T").innerHTML = CustRewLoc1;
+  document.getElementById("C-Rew-Dec1T").innerHTML = CustRewDec1;
+  document.getElementById("C-Rname2T").innerHTML = CustReview2;
+  document.getElementById("C-Rew-Loc2T").innerHTML = CustRewLoc2;
+  document.getElementById("C-Rew-Dec2T").innerHTML = CustRewDec2;
+  document.getElementById("C-Rname3T").innerHTML = CustReview3;
+  document.getElementById("C-Rew-Loc3T").innerHTML = CustRewLoc3;
+  document.getElementById("C-Rew-Dec3T").innerHTML = CustRewDec3;
 
 
 

@@ -279,6 +279,16 @@ function handleSubmit() {
     const CustProdDec = document.getElementById('C-Prod-Dec').value;
     const CustProdPrice = document.getElementById('C-Prod-Price').value;
 
+    const CustReview1 = document.getElementById('C-Rname1').value;
+    const CustRewLoc1 = document.getElementById('C-Rew-Loc1').value;
+    const CustRewDec1 = document.getElementById('C-Rew-Dec1').value;
+    const CustReview2 = document.getElementById('C-Rname2').value;
+    const CustRewLoc2 = document.getElementById('C-Rew-Loc2').value;
+    const CustRewDec2 = document.getElementById('C-Rew-Dec2').value;
+    const CustReview3 = document.getElementById('C-Rname3').value;
+    const CustRewLoc3 = document.getElementById('C-Rew-Loc3').value;
+    const CustRewDec3 = document.getElementById('C-Rew-Dec3').value;
+
 
 
 
@@ -290,6 +300,16 @@ function handleSubmit() {
     localStorage.setItem('companyCustProd', CustProd);
     localStorage.setItem('companyCustProdDec', CustProdDec);
     localStorage.setItem('companyCustProdPrice', CustProdPrice);
+
+    localStorage.setItem('companyCustReview1', CustReview1);
+    localStorage.setItem('companyCustRewLoc1', CustRewLoc1);
+    localStorage.setItem('companyCustRewDec1', CustRewDec1);
+    localStorage.setItem('companyCustReview2', CustReview2);
+    localStorage.setItem('companyCustRewLoc2', CustRewLoc2);
+    localStorage.setItem('companyCustRewDec2', CustRewDec2);
+    localStorage.setItem('companyCustReview3', CustReview3);
+    localStorage.setItem('companyCustRewLoc3', CustRewLoc3);
+    localStorage.setItem('companyCustRewDec3', CustRewDec3);
 
 
 
