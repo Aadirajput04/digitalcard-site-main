@@ -260,6 +260,10 @@ window.addEventListener('load', () => {
 
 
 
+
+/// REVIEW SECTION JAVASCRIPT STARTING =================================================
+
+
 window.addEventListener('load', () => {
   const imageSrc = localStorage.getItem('companyCustProdImg');
   const pImageT = document.getElementById('Rew-Image1T');
@@ -270,3 +274,7 @@ window.addEventListener('load', () => {
 
   // Rest of your code...
 });
+
+
+
+/// REVIEW SECTION JAVASCRIPT ENDING =================================================

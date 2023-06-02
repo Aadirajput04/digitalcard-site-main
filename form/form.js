@@ -430,9 +430,12 @@ fileInput.addEventListener('change', (event) => {
 
 
 
+/// REVIEW SECTION JAVASCRIPT STARTING
 
 
 
+
+    ///REVIEW SECTION 1 
 
 const fileInput1 = document.getElementById('Rew-ImageInput');
 
@@ -451,3 +454,8 @@ fileInput1.addEventListener('change', (event) => {
 
   reader.readAsDataURL(event.target.files[0]);
 });
+
+
+
+
+/// REVIEW SECTION JAVASCRIPT END
