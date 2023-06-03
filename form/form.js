@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var gImageInput = document.getElementById("gImage");
     var gImageElement = document.getElementById("G-Image");
 
-    gImageElement.addEventListener("click", function () {
-        gImageInput.click();
-    });
+    // gImageElement.addEventListener("click", function () {
+    //     gImageInput.click();
+    // });
 
     gImageInput.addEventListener("change", function (event) {
         var file = event.target.files[0];
