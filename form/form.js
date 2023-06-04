@@ -4,10 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var uploadImageInput = document.getElementById("uploadImage");
     var userImageElement = document.getElementById("userImage");
 
-    userImageElement.addEventListener("click", function () {
-        uploadImageInput.click();
-    });
-
     uploadImageInput.addEventListener("change", function (event) {
         var file = event.target.files[0];
         var reader = new FileReader();
@@ -29,10 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     var pImageInput = document.getElementById("pImage");
     var proImageElement = document.getElementById("Pro-Image");
-
-    proImageElement.addEventListener("click", function () {
-        pImageInput.click();
-    });
 
     pImageInput.addEventListener("change", function (event) {
         var file = event.target.files[0];
@@ -79,10 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var qrImageInput = document.getElementById("QrImage");
     var qrImageElement = document.getElementById("Qr-Image");
 
-    qrImageElement.addEventListener("click", function () {
-        qrImageInput.click();
-    });
-
     qrImageInput.addEventListener("change", function (event) {
         var file = event.target.files[0];
         var reader = new FileReader();
@@ -104,11 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // Get the input element and the image element using their classes
 const inputFile = document.querySelector('.pro3-img');
 const img = document.querySelector('.Pro3-Image');
-
-// Add an event listener to the image element
-img.addEventListener('click', () => {
-    inputFile.click(); // Simulate a click on the file input element
-});
 
 // Add an event listener for the input change event
 inputFile.addEventListener('change', handleImageUpload);
@@ -276,6 +259,7 @@ function handleSubmit() {
     const Phone = document.getElementById('C-Phone').value;
     const Email = document.getElementById('C-Email').value;
     const CustProd = document.getElementById('C-Prod').value;
+    console.log(CustProd)
     const CustProdDec = document.getElementById('C-Prod-Dec').value;
     const CustProdPrice = document.getElementById('C-Prod-Price').value;
 
