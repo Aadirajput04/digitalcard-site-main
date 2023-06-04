@@ -171,6 +171,7 @@
     </div>
 
     <script>
+
       let previousDetails = [];
       let updateMode = false;
       let updateIndex = -1;
@@ -213,6 +214,13 @@
           listItem.textContent = productName; // Show only product name
           listItem.setAttribute('data-index', previousDetails.length - 1);
           previousDetailsList.appendChild(listItem);
+
+          document.getElementById('C-Prod').value = "";
+          document.getElementById('C-Prod-Dec').value = "";
+          document.getElementById('C-Prod-Price').value = "";
+          document.getElementById('Pro-Image').src = "/card tamplate/img/7309681.jpg"
+
+          localStorage.setItem("AllProducts", JSON.stringify(previousDetails))
         }
 
       }

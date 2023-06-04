@@ -110,7 +110,43 @@ window.addEventListener("load", () => {
   const CustRewLoc3 = localStorage.getItem("companyCustRewLoc3");
   const CustRewDec3 = localStorage.getItem("companyCustRewDec3");
 
+  const allProductsRaw = localStorage.getItem("AllProducts")
+  let allProducts = []
+  if(allProductsRaw != null){
+    allProducts = JSON.parse(allProductsRaw)
+  }
+  console.log(allProducts)
 
+  allProducts.forEach(data => {
+    createProduct(data.name, data.description, data.price, data.image)
+  });
+
+
+  function createProduct(name, description, price, url){
+    let div = document.createElement("div")
+    div.className = "col-md-4"
+    div.innerHTML = `
+    <div class="product-details">
+      <div class="pro-up text-center px-3 py-3">
+          <img src="./img/logo.svg" alt="" height="150px" width="100%" id="pImageT">
+      </div>
+      <div class="pro-down">
+          <div class="pro-decs px-3 py-3">
+              <h3 id="C-ProdT">Product 1</h3>
+              <p id="C-Prod-DecT">Product Details</p>
+              <h4 id="C-Prod-PriceT">1245</h4>
+
+          </div>
+      </div>
+    </div>`
+
+    div.querySelector("#pImageT").src = url
+    div.querySelector("#C-ProdT").innerText = name
+    div.querySelector("#C-Prod-DecT").innerText = description
+    div.querySelector("#C-Prod-PriceT").innerText = price
+
+    document.querySelector("#products-holder").appendChild(div)
+  }
 
 
 
@@ -118,7 +154,7 @@ window.addEventListener("load", () => {
   document.getElementById("what-you-doT").innerHTML = wyd;
   document.getElementById("userImageT").src = logo;
   document.getElementById("C-AddT").innerHTML = Add;
-  document.getElementById("C-PhoneT").innerHTML = Phone;
+  document.getElementById("C-PhoneT").innerText = Phone;
   document.getElementById("C-EmailT").innerHTML = Email;
   document.getElementById("C-ProdT").innerHTML = CustProd;
   document.getElementById("C-Prod-DecT").innerHTML = CustProdDec;
