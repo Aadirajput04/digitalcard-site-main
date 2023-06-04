@@ -95,6 +95,7 @@ window.addEventListener("load", () => {
   const Add = localStorage.getItem("companyAdd");
   const Phone = localStorage.getItem("companyPhone");
   const Email = localStorage.getItem("companyEmail");
+
   const CustProd = localStorage.getItem("companyCustProd");
   const CustProdDec= localStorage.getItem("companyCustProdDec");
   const CustProdPrice= localStorage.getItem("companyCustProdPrice");

@@ -184,7 +184,7 @@
         let productPrice = document.getElementById('C-Prod-Price').value;
 
         // Check if all fields are filled
-        if (productName === '' || productDescription === '' || productPrice === '') {
+        if (productName == '' || productDescription == '' || productPrice == '') {
           alert('Please fill all the input fields');
           return;
         }
@@ -215,12 +215,6 @@
           previousDetailsList.appendChild(listItem);
         }
 
-        // Reset input values
-        document.getElementById('C-Prod').value = '';
-        document.getElementById('C-Prod-Dec').value = '';
-        document.getElementById('C-Prod-Price').value = '';
-        document.getElementById('Pro-Image').src = "/card tamplate/img/7309681.jpg";
-        document.getElementById('pImage').value = '';
       }
 
       function updatePreviousDetailItem(index) {
@@ -232,7 +226,7 @@
 
       function findProductIndex(productName) {
         for (let i = 0; i < previousDetails.length; i++) {
-          if (previousDetails[i].name === productName) {
+          if (previousDetails[i].name == productName) {
             return i;
           }
         }
@@ -282,7 +276,7 @@
 
         <div class="btn-group mt-5">
           <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous </a>
-              <a href="#" onclick="addNewImage(event)" class="btn btn-add width-50 ml-auto">Add+</a>
+              <a onclick="addNewImage(event)" class="btn btn-add width-50 ml-auto">Add+</a>
               <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
         </div>
 
@@ -442,7 +436,8 @@
 
           <div class="input-group ">
             <lable class="C-Prod"></lable>
-            <textarea type="text-area" name="C-Prod" id="C-Rew-Dec1" placeholder="Write about your company" style="min-height: 10rem !important;"></textarea>
+            <textarea type="text-area" name="C-Prod" id="C-Rew-Dec1" placeholder="Write about your company"
+              style="min-height: 10rem !important;"></textarea>
 
           </div>
 
@@ -458,7 +453,8 @@
             <label for="rImage">
               <img class="rew-Img" id="Rew-Image1" src="/card tamplate/img/7309681.jpg" alt="">
             </label>
-            <input type="file" class="R-Img" id="Rew-Image1" accept="image/*" style="visibility: hidden; width: 0; height: 0;">
+            <input type="file" class="R-Img" id="Rew-Image1" accept="image/*"
+              style="visibility: hidden; width: 0; height: 0;">
 
 
             <div class="rating ">
@@ -511,7 +507,8 @@
 
           <div class="input-group ">
             <lable class="C-Prod"></lable>
-            <textarea type="text-area" name="C-Prod" id="C-Rew-Dec2" placeholder="Write about your company" style="min-height: 10rem !important;"></textarea>
+            <textarea type="text-area" name="C-Prod" id="C-Rew-Dec2" placeholder="Write about your company"
+              style="min-height: 10rem !important;"></textarea>
 
           </div>
 
@@ -580,7 +577,8 @@
 
           <div class="input-group ">
             <lable class="C-Prod"></lable>
-            <textarea type="text-area" name="C-Prod" id="C-Rew-Dec3" placeholder="Write about your company" style="min-height: 10rem !important;"></textarea>
+            <textarea type="text-area" name="C-Prod" id="C-Rew-Dec3" placeholder="Write about your company"
+              style="min-height: 10rem !important;"></textarea>
 
           </div>
 
