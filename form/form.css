@@ -281,3 +281,16 @@ color: #FFFFFF;
 	background-color:white;
 	color: black;
 }
+#previousDetailsList {
+	list-style: number;
+	counter-reset: li-counter;
+}
+#previousDetailsList li::before {
+  content: counter(li-counter) ". ";
+  counter-increment: li-counter;
+}
+
+#previousDetailsList li {
+  display: inline-block;
+  margin-right: 20px;
+}
