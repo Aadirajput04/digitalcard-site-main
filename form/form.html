@@ -176,7 +176,7 @@
       let updateMode = false;
       let updateIndex = -1;
 
-      function addNewPro() {
+      async function addNewPro() {
         console.log('addNewPro');
 
         // Get input values
@@ -196,33 +196,54 @@
           return;
         }
 
-        let imageUrl = URL.createObjectURL(imageFile);
+        const reader = new FileReader();
 
-        let detail = { name: productName, description: productDescription, price: productPrice, image: imageUrl };
+        reader.addEventListener('load', () => {
+          const imageString = reader.result; // Convert src to string
+          console.log(imageString); // Display the string in the console or use it as needed
+          let detail = { name: productName, description: productDescription, price: productPrice, image: imageString };
 
-        if (updateMode) {
-          // Update existing item
-          previousDetails[updateIndex] = detail;
-          updatePreviousDetailItem(updateIndex);
-          updateMode = false;
-          updateIndex = -1;
-        } else {
-          // Add new item
-          previousDetails.push(detail);
-          let previousDetailsList = document.getElementById('previousDetailsList');
-          let listItem = document.createElement('li');
-          listItem.textContent = productName; // Show only product name
-          listItem.setAttribute('data-index', previousDetails.length - 1);
-          previousDetailsList.appendChild(listItem);
+          if (updateMode) {
+            // Update existing item
+            previousDetails[updateIndex] = detail;
+            updatePreviousDetailItem(updateIndex);
+            updateMode = false;
+            updateIndex = -1;
+          } else {
+            // Add new item
+            previousDetails.push(detail);
+            let previousDetailsList = document.getElementById('previousDetailsList');
+            let listItem = document.createElement('li');
+            listItem.textContent = productName; // Show only product name
+            listItem.setAttribute('data-index', previousDetails.length - 1);
+            previousDetailsList.appendChild(listItem);
 
-          document.getElementById('C-Prod').value = "";
-          document.getElementById('C-Prod-Dec').value = "";
-          document.getElementById('C-Prod-Price').value = "";
-          document.getElementById('Pro-Image').src = "/card tamplate/img/7309681.jpg"
+            document.getElementById('C-Prod').value = "";
+            document.getElementById('C-Prod-Dec').value = "";
+            document.getElementById('C-Prod-Price').value = "";
+            document.getElementById('Pro-Image').src = "/card tamplate/img/7309681.jpg"
 
-          localStorage.setItem("AllProducts", JSON.stringify(previousDetails))
-        }
+            localStorage.setItem("AllProducts", JSON.stringify(previousDetails))
+          }
+        });
 
+        reader.readAsDataURL(imageFile);
+
+      }
+
+      function imageToString() {
+        document.getElementById('Pro-Image').addEventListener("change", function (event) {
+          var file = event.target.files[0];
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            gImageElement.src = e.target.result;
+          };
+
+          if (file) {
+            reader.readAsDataURL(file);
+          }
+        });
       }
 
       function updatePreviousDetailItem(index) {

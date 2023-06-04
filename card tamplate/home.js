@@ -128,22 +128,22 @@ window.addEventListener("load", () => {
     div.innerHTML = `
     <div class="product-details">
       <div class="pro-up text-center px-3 py-3">
-          <img src="./img/logo.svg" alt="" height="150px" width="100%" id="pImageT">
+          <img src="./img/logo.svg" alt="" height="150px" width="100%" class="pImageT">
       </div>
       <div class="pro-down">
           <div class="pro-decs px-3 py-3">
-              <h3 id="C-ProdT">Product 1</h3>
-              <p id="C-Prod-DecT">Product Details</p>
-              <h4 id="C-Prod-PriceT">1245</h4>
+              <h3 class="C-ProdT">Product 1</h3>
+              <p class="C-Prod-DecT">Product Details</p>
+              <h4 class="C-Prod-PriceT">1245</h4>
 
           </div>
       </div>
     </div>`
 
-    div.querySelector("#pImageT").src = url
-    div.querySelector("#C-ProdT").innerText = name
-    div.querySelector("#C-Prod-DecT").innerText = description
-    div.querySelector("#C-Prod-PriceT").innerText = price
+    div.querySelector(".pImageT").src = url
+    div.querySelector(".C-ProdT").innerText = name
+    div.querySelector(".C-Prod-DecT").innerText = description
+    div.querySelector(".C-Prod-PriceT").innerText = price
 
     document.querySelector("#products-holder").appendChild(div)
   }
