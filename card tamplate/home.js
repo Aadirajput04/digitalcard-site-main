@@ -110,6 +110,9 @@ window.addEventListener("load", () => {
   const CustRewLoc3 = localStorage.getItem("companyCustRewLoc3");
   const CustRewDec3 = localStorage.getItem("companyCustRewDec3");
 
+
+  /// DYNAMICLY GENERATED CODE
+
   const allProductsRaw = localStorage.getItem("AllProducts")
   let allProducts = []
   if(allProductsRaw != null){
@@ -143,7 +146,8 @@ window.addEventListener("load", () => {
     div.querySelector(".pImageT").src = url
     div.querySelector(".C-ProdT").innerText = name
     div.querySelector(".C-Prod-DecT").innerText = description
-    div.querySelector(".C-Prod-PriceT").innerText = price
+    div.querySelector(".C-Prod-PriceT").innerText = "Rs."+ price
+
 
     document.querySelector("#products-holder").appendChild(div)
   }
@@ -156,9 +160,9 @@ window.addEventListener("load", () => {
   document.getElementById("C-AddT").innerHTML = Add;
   document.getElementById("C-PhoneT").innerText = Phone;
   document.getElementById("C-EmailT").innerHTML = Email;
-  document.getElementById("C-ProdT").innerHTML = CustProd;
-  document.getElementById("C-Prod-DecT").innerHTML = CustProdDec;
-  document.getElementById("C-Prod-PriceT").innerHTML = CustProdPrice;
+  // document.getElementById("C-ProdT").innerHTML = CustProd;
+  // document.getElementById("C-Prod-DecT").innerHTML = CustProdDec;
+  // document.getElementById("C-Prod-PriceT").innerHTML = CustProdPrice;
 
   document.getElementById("C-Rname1T").innerHTML = CustReview1;
   document.getElementById("C-Rew-Loc1T").innerHTML = CustRewLoc1;
@@ -267,9 +271,6 @@ emailIcon.addEventListener("click", () => {
 
 
 
-//  RUPEE ICON SHOW
-const price = document.getElementById("C-Prod-PriceT").textContent;
-console.log(price); // Output: 1245
 
 
 
@@ -283,16 +284,16 @@ console.log(price); // Output: 1245
 
 
 
-window.addEventListener('load', () => {
-  const imageSrc = localStorage.getItem('companyCustProdImg');
-  const pImageT = document.getElementById('pImageT');
+// window.addEventListener('load', () => {
+//   const imageSrc = localStorage.getItem('companyCustProdImg');
+//   const pImageT = document.getElementById('pImageT');
 
-  if (imageSrc) {
-    pImageT.src = imageSrc;
-  }
+//   if (imageSrc) {
+//     pImageT.src = imageSrc;
+//   }
 
-  // Rest of your code...
-});
+//   // Rest of your code...
+// });
 
 
 
@@ -302,14 +303,27 @@ window.addEventListener('load', () => {
 
 
 window.addEventListener('load', () => {
-  const imageSrc = localStorage.getItem('companyCustProdImg');
+  const imageSrc = localStorage.getItem('Rew-Image1T');
   const pImageT = document.getElementById('Rew-Image1T');
-
   if (imageSrc) {
     pImageT.src = imageSrc;
   }
+});
 
-  // Rest of your code...
+
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('Rew-Image2T');
+  const pImageT = document.getElementById('Rew-Image2T');
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
+});
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('Rew-Image3T');
+  const pImageT = document.getElementById('Rew-Image3T');
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
 });
 
 

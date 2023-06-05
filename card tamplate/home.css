@@ -254,6 +254,9 @@ body{
 
     font-size: 27px;
 }
+.review-image {
+    border-radius: 1rem;
+}
 
 .review-sec-1 {
     display: flex;

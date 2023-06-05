@@ -294,3 +294,7 @@ color: #FFFFFF;
   display: inline-block;
   margin-right: 20px;
 }
+
+#Rew-Image2, #Rew-Image3,#Rew-Image1{
+	display: none;
+}

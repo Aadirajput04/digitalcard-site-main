@@ -388,23 +388,23 @@ inputField.addEventListener('input', function() {
 
 
 
-const fileInput = document.getElementById('pImage');
+// const fileInput = document.getElementById('pImage');
 
-fileInput.addEventListener('change', (event) => {
-  const reader = new FileReader();
+// fileInput.addEventListener('change', (event) => {
+//   const reader = new FileReader();
 
-  reader.onload = function (event) {
-    const imageSrc = event.target.result;
+//   reader.onload = function (event) {
+//     const imageSrc = event.target.result;
 
-    localStorage.setItem('companyCustProdImg', imageSrc);
+//     localStorage.setItem('companyCustProdImg', imageSrc);
 
-    // Update the image source in home.html
-    const pImageT = document.getElementById('pImageT');
-    pImageT.src = imageSrc;
-  };
+//     // Update the image source in home.html
+//     const pImageT = document.getElementById('pImageT');
+//     pImageT.src = imageSrc;
+//   };
 
-  reader.readAsDataURL(event.target.files[0]);
-});
+//   reader.readAsDataURL(event.target.files[0]);
+// });
 
 
 
@@ -420,27 +420,81 @@ fileInput.addEventListener('change', (event) => {
 
 
 
-    ///REVIEW SECTION 1 
+    ///REVIEW SECTION 1
+    document.addEventListener('DOMContentLoaded', () => {
+        let fileInput1 = document.getElementById('Rew-Image1');
 
-const fileInput1 = document.getElementById('Rew-ImageInput');
+        fileInput1.addEventListener('change', (event) => {
+            console.log("file input changed");
+          let reader = new FileReader();
 
-fileInput1.addEventListener('change', (event) => {
-  const reader = new FileReader();
+          reader.onload = function (event) {
+            console.log("file loaded");
+            let imageSrc = event.target.result;
 
-  reader.onload = function (event) {
-    const imageSrc = event.target.result;
+            localStorage.setItem('Rew-Image1T', imageSrc);
+          };
+          if (event.target.files && event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+          }
+        });
+      });
 
-    localStorage.setItem('companyCustProdImg', imageSrc);
 
-    // Update the image source in home.html
-    const pImageT = document.getElementById('Rew-Image1T');
-    pImageT.src = imageSrc;
-  };
 
-  reader.readAsDataURL(event.target.files[0]);
-});
+
+
+
+
+    ///REVIEW SECTION 2
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let fileInput1 = document.getElementById('Rew-Image2');
+
+        fileInput1.addEventListener('change', (event) => {
+            console.log("file input changed");
+          let reader = new FileReader();
+
+          reader.onload = function (event) {
+            console.log("file loaded");
+            let imageSrc = event.target.result;
+
+            localStorage.setItem('Rew-Image2T', imageSrc);
+          };
+          if (event.target.files && event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+          }
+        });
+      });
+
+
+     ///REVIEW SECTION
+     document.addEventListener('DOMContentLoaded', () => {
+        let fileInput1 = document.getElementById('Rew-Image3');
+
+        fileInput1.addEventListener('change', (event) => {
+
+          let reader = new FileReader();
+
+          reader.onload = function (event) {
+
+            let imageSrc = event.target.result;
+
+            localStorage.setItem('Rew-Image3T', imageSrc);
+          };
+          if (event.target.files && event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+          }
+        });
+      });
 
 
 
 
 /// REVIEW SECTION JAVASCRIPT END
+
+
+
+window.addEventListener('beforeunload', () => {
+    localStorage.clear();
+  });
