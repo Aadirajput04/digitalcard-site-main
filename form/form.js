@@ -388,23 +388,23 @@ inputField.addEventListener('input', function() {
 
 
 
-// const fileInput = document.getElementById('pImage');
+const fileInput = document.getElementById('pImage');
 
-// fileInput.addEventListener('change', (event) => {
-//   const reader = new FileReader();
+fileInput.addEventListener('change', (event) => {
+  const reader = new FileReader();
 
-//   reader.onload = function (event) {
-//     const imageSrc = event.target.result;
+  reader.onload = function (event) {
+    const imageSrc = event.target.result;
 
-//     localStorage.setItem('companyCustProdImg', imageSrc);
+    localStorage.setItem('companyCustProdImg', imageSrc);
 
-//     // Update the image source in home.html
-//     const pImageT = document.getElementById('pImageT');
-//     pImageT.src = imageSrc;
-//   };
+    // Update the image source in home.html
+    const pImageT = document.getElementById('pImageT');
+    pImageT.src = imageSrc;
+  };
 
-//   reader.readAsDataURL(event.target.files[0]);
-// });
+  reader.readAsDataURL(event.target.files[0]);
+});
 
 
 
@@ -495,6 +495,6 @@ inputField.addEventListener('input', function() {
 
 
 
-window.addEventListener('beforeunload', () => {
-    localStorage.clear();
-  });
+// window.addEventListener('beforeunload', () => {
+//     localStorage.clear();
+//   });
