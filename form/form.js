@@ -273,6 +273,7 @@ function handleSubmit() {
     const CustReview3 = document.getElementById('C-Rname3').value;
     const CustRewLoc3 = document.getElementById('C-Rew-Loc3').value;
     const CustRewDec3 = document.getElementById('C-Rew-Dec3').value;
+    const WhoWeAre = document.getElementById('C-decs').value;
 
 
 
@@ -295,6 +296,7 @@ function handleSubmit() {
     localStorage.setItem('companyCustReview3', CustReview3);
     localStorage.setItem('companyCustRewLoc3', CustRewLoc3);
     localStorage.setItem('companyCustRewDec3', CustRewDec3);
+    localStorage.setItem('companyWhoWeAre', WhoWeAre);
 
 
 

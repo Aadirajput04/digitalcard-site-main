@@ -95,10 +95,9 @@ window.addEventListener("load", () => {
   const Add = localStorage.getItem("companyAdd");
   const Phone = localStorage.getItem("companyPhone");
   const Email = localStorage.getItem("companyEmail");
-
-  const CustProd = localStorage.getItem("companyCustProd");
-  const CustProdDec= localStorage.getItem("companyCustProdDec");
-  const CustProdPrice= localStorage.getItem("companyCustProdPrice");
+  // const CustProd = localStorage.getItem("companyCustProd");
+  // const CustProdDec= localStorage.getItem("companyCustProdDec");
+  // const CustProdPrice= localStorage.getItem("companyCustProdPrice");
 
   const CustReview1 = localStorage.getItem("companyCustReview1");
   const CustRewLoc1 = localStorage.getItem("companyCustRewLoc1");
@@ -109,6 +108,7 @@ window.addEventListener("load", () => {
   const CustReview3 = localStorage.getItem("companyCustReview3");
   const CustRewLoc3 = localStorage.getItem("companyCustRewLoc3");
   const CustRewDec3 = localStorage.getItem("companyCustRewDec3");
+  const WhoWeAre = localStorage.getItem("companyWhoWeAre");
 
 
   /// DYNAMICLY GENERATED CODE
@@ -173,6 +173,7 @@ window.addEventListener("load", () => {
   document.getElementById("C-Rname3T").innerHTML = CustReview3;
   document.getElementById("C-Rew-Loc3T").innerHTML = CustRewLoc3;
   document.getElementById("C-Rew-Dec3T").innerHTML = CustRewDec3;
+  document.getElementById("C-decsT").innerHTML = WhoWeAre;
 
 
 
