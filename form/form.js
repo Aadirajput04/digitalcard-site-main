@@ -427,71 +427,31 @@ fileInput.addEventListener('change', (event) => {
 
 
 
-    ///REVIEW SECTION 1
+    ///REVIEW SECTION 
     document.addEventListener('DOMContentLoaded', () => {
-        let fileInput1 = document.getElementById('Rew-Image1');
+        const fileInputs = document.querySelectorAll('[id^="Rew-Image"]');
 
-        fileInput1.addEventListener('change', (event) => {
+        fileInputs.forEach((fileInput, index) => {
+          fileInput.addEventListener('change', (event) => {
+            const reader = new FileReader();
 
-          let reader = new FileReader();
+            reader.onload = function (event) {
+              const imageSrc = event.target.result;
+              localStorage.setItem(`Rew-Image${index + 1}T`, imageSrc);
+            };
 
-          reader.onload = function (event) {
+            if (event.target.files && event.target.files[0]) {
+              reader.readAsDataURL(event.target.files[0]);
+            }
+          });
 
-            let imageSrc = event.target.result;
-
-            localStorage.setItem('Rew-Image1T', imageSrc);
-          };
-          if (event.target.files && event.target.files[0]) {
-            reader.readAsDataURL(event.target.files[0]);
-          }
-        });
-      });
-
-
-
-
-
-
-
-    ///REVIEW SECTION 2
-
-    document.addEventListener('DOMContentLoaded', () => {
-        let fileInput1 = document.getElementById('Rew-Image2');
-
-        fileInput1.addEventListener('change', (event) => {
-
-          let reader = new FileReader();
-
-          reader.onload = function (event) {
-
-            let imageSrc = event.target.result;
-
-            localStorage.setItem('Rew-Image2T', imageSrc);
-          };
-          if (event.target.files && event.target.files[0]) {
-            reader.readAsDataURL(event.target.files[0]);
-          }
-        });
-      });
-
-
-     ///REVIEW SECTION
-     document.addEventListener('DOMContentLoaded', () => {
-        let fileInput1 = document.getElementById('Rew-Image3');
-
-        fileInput1.addEventListener('change', (event) => {
-
-          let reader = new FileReader();
-
-          reader.onload = function (event) {
-
-            let imageSrc = event.target.result;
-
-            localStorage.setItem('Rew-Image3T', imageSrc);
-          };
-          if (event.target.files && event.target.files[0]) {
-            reader.readAsDataURL(event.target.files[0]);
-          }
+          window.addEventListener('load', () => {
+            const imageSrc = localStorage.getItem(`Rew-Image${index + 1}T`);
+            const pImageT = document.getElementById(`Rew-Image${index + 1}T`);
+            if (imageSrc) {
+              pImageT.src = imageSrc;
+            }
+          });
         });
       });
 

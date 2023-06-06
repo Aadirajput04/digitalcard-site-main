@@ -170,7 +170,7 @@ window.addEventListener("load", () => {
   function createGallery(url) {
     let div = document.createElement("div")
     div.className = "col-md-4"
-    div.innerHTML = `                                
+    div.innerHTML = `
     <div class="gallery-image">
       <img src="./img/7309681.jpg" alt="" height="250px " width="250px">
     </div>`
@@ -330,29 +330,6 @@ emailIcon.addEventListener("click", () => {
 /// REVIEW SECTION JAVASCRIPT STARTING =================================================
 
 
-window.addEventListener('load', () => {
-  const imageSrc = localStorage.getItem('Rew-Image1T');
-  const pImageT = document.getElementById('Rew-Image1T');
-  if (imageSrc) {
-    pImageT.src = imageSrc;
-  }
-});
-
-
-window.addEventListener('load', () => {
-  const imageSrc = localStorage.getItem('Rew-Image2T');
-  const pImageT = document.getElementById('Rew-Image2T');
-  if (imageSrc) {
-    pImageT.src = imageSrc;
-  }
-});
-window.addEventListener('load', () => {
-  const imageSrc = localStorage.getItem('Rew-Image3T');
-  const pImageT = document.getElementById('Rew-Image3T');
-  if (imageSrc) {
-    pImageT.src = imageSrc;
-  }
-});
 
 
 
