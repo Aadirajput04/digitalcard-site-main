@@ -260,7 +260,6 @@ function handleSubmit() {
     const Phone = document.getElementById('C-Phone').value;
     const Email = document.getElementById('C-Email').value;
     const CustProd = document.getElementById('C-Prod').value;
-    console.log(CustProd)
     const CustProdDec = document.getElementById('C-Prod-Dec').value;
     const CustProdPrice = document.getElementById('C-Prod-Price').value;
 
@@ -278,7 +277,8 @@ function handleSubmit() {
 
 
 
-
+    // nitesh - setting all image url as string array
+    localStorage.setItem("allGalleryUrls", JSON.stringify(allGalleryUrls))
 
     localStorage.setItem('companyAdd', Add);
     localStorage.setItem('companyPhone', Phone);

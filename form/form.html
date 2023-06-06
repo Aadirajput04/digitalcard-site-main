@@ -315,6 +315,11 @@
       </div>
     </div>
     <script>
+
+
+      // nitesh - saving all image url as string in the below array 
+      let allGalleryUrls = []
+
       function addNewImage(event) {
         event.preventDefault();
 
@@ -331,6 +336,10 @@
 
             reader.onload = function (e) {
               let image = document.createElement('img');
+
+              // nitesh - add new image url in array
+              allGalleryUrls.push(e.target.result)
+
               image.src = e.target.result;
               image.style.width = '100px';
               image.style.height = '100px';

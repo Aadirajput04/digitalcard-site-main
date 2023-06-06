@@ -99,6 +99,7 @@ window.addEventListener("load", () => {
   // const CustProdDec= localStorage.getItem("companyCustProdDec");
   // const CustProdPrice= localStorage.getItem("companyCustProdPrice");
 
+
   const CustReview1 = localStorage.getItem("companyCustReview1");
   const CustRewLoc1 = localStorage.getItem("companyCustRewLoc1");
   const CustRewDec1 = localStorage.getItem("companyCustRewDec1");
@@ -115,7 +116,7 @@ window.addEventListener("load", () => {
 
   const allProductsRaw = localStorage.getItem("AllProducts")
   let allProducts = []
-  if(allProductsRaw != null){
+  if (allProductsRaw != null) {
     allProducts = JSON.parse(allProductsRaw)
   }
   console.log(allProducts)
@@ -125,7 +126,7 @@ window.addEventListener("load", () => {
   });
 
 
-  function createProduct(name, description, price, url){
+  function createProduct(name, description, price, url) {
     let div = document.createElement("div")
     div.className = "col-md-4"
     div.innerHTML = `
@@ -146,10 +147,36 @@ window.addEventListener("load", () => {
     div.querySelector(".pImageT").src = url
     div.querySelector(".C-ProdT").innerText = name
     div.querySelector(".C-Prod-DecT").innerText = description
-    div.querySelector(".C-Prod-PriceT").innerText = "Rs."+ price
+    div.querySelector(".C-Prod-PriceT").innerText = "Rs." + price
 
 
     document.querySelector("#products-holder").appendChild(div)
+  }
+
+
+
+
+  // nitesh - read and create all the stored images
+  const allGalleryUrlsRaw = localStorage.getItem("allGalleryUrls")
+  var allGalleryUrls = []
+  if (allGalleryUrlsRaw != null) {
+    allGalleryUrls = JSON.parse(allGalleryUrlsRaw)
+  }
+
+  allGalleryUrls.forEach(url => {
+    createGallery(url)
+  });
+
+  function createGallery(url) {
+    let div = document.createElement("div")
+    div.className = "col-md-4"
+    div.innerHTML = `                                
+    <div class="gallery-image">
+      <img src="./img/7309681.jpg" alt="" height="250px " width="250px">
+    </div>`
+
+    div.querySelector("img").src = url
+    document.querySelector("#gallery-container").appendChild(div)
   }
 
 
@@ -207,7 +234,7 @@ window.addEventListener("load", () => {
 
 
 
- //// WHATSAPP URL JAVASCRIPT STARTING=================================
+  //// WHATSAPP URL JAVASCRIPT STARTING=================================
 
   const whatsappNumber = localStorage.getItem("companyWhatsAppNumber");
   const whatsappLink = document.getElementById("C-WPhoneT");
@@ -215,7 +242,7 @@ window.addEventListener("load", () => {
 
 
 
- /////WHATSAPP URL JAVASCRIPT ENDING ===================================
+  /////WHATSAPP URL JAVASCRIPT ENDING ===================================
 
 
 
