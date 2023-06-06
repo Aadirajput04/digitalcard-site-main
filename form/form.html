@@ -177,7 +177,7 @@
       let updateIndex = -1;
 
       async function addNewPro() {
-        console.log('addNewPro');
+        // console.log('addNewPro');
 
         // Get input values
         let productName = document.getElementById('C-Prod').value;
@@ -200,7 +200,7 @@
 
         reader.addEventListener('load', () => {
           const imageString = reader.result; // Convert src to string
-          console.log(imageString); // Display the string in the console or use it as needed
+          // console.log(imageString); // Display the string in the console or use it as needed
           let detail = { name: productName, description: productDescription, price: productPrice, image: imageString };
 
           if (updateMode) {
@@ -317,7 +317,7 @@
     <script>
 
 
-      // nitesh - saving all image url as string in the below array 
+      // nitesh - saving all image url as string in the below array
       let allGalleryUrls = []
 
       function addNewImage(event) {
@@ -425,7 +425,7 @@
 
           <div class="input-group ">
             <lable class="C-dec"></lable>
-            <textarea type="text-area" name="C-dec" id="C-decs" placeholder="Write about your company"></textarea>
+            <textarea type="text-area" name="C-dec" id="C-decs"  class="C-decs"  placeholder="Write about your company"></textarea>
 
           </div>
 
@@ -447,7 +447,7 @@
         <div class="btn-group mt-5">
           <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous </a>
 
-              <a href="#" class="btn btn-next width-50 ml-auto">Next -></a>
+              <a href="#" class="btn btn-next width-50 ml-auto" id="nextButton1">Next -></a>
 
         </div>
       </div>
