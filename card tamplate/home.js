@@ -307,7 +307,36 @@ emailIcon.addEventListener("click", () => {
 
 
 
+/// REVIEW SECTION JAVASCRIPT STARTING =================================================
 
+
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('Rew-Image1T');
+  const pImageT = document.getElementById('Rew-Image1T');
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
+});
+
+
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('Rew-Image2T');
+  const pImageT = document.getElementById('Rew-Image2T');
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
+});
+window.addEventListener('load', () => {
+  const imageSrc = localStorage.getItem('Rew-Image3T');
+  const pImageT = document.getElementById('Rew-Image3T');
+  if (imageSrc) {
+    pImageT.src = imageSrc;
+  }
+});
+
+
+
+/// REVIEW SECTION JAVASCRIPT ENDING =================================================
 
 
 
