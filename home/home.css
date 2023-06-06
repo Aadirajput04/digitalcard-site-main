@@ -1,21 +1,37 @@
+
+body{
+   box-sizing: border-box;
+   padding: 0;
+}
 .nav-home {
 
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+
 
     position: sticky;
     top: 0;
-    backdrop-filter: blur(8px);
-    background: none;
-    padding-left: 2rem;
+
+    background: transparent;
+    /* padding-left: 2rem; */
     padding-right: 2rem;
+
 
 
     padding-top: 0.7rem;
 }
 
+.button-parent {
+ display: inline-flex;
+ 
+}
+
+.button-1{
+    display: flex;
+}
 
 
 
@@ -23,11 +39,11 @@
     text-decoration: none;
     color: #142A54;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 19px;
     background-color: #00FFFC;
-    order: 2px solid #00FFFC;
+    border: 2px solid #00FFFC;
     border-radius: 64px;
-    padding: 16px 36px;
+    padding: 12px 32px;
     transition: transform 0.4s ease !important;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease;
@@ -49,8 +65,8 @@ a.sign-in {
     border-radius: 64px;
     margin-right: .5rem;
     font-weight: 700;
-    font-size: 24px;
-    padding: 16px 36px;
+    font-size: 19px;
+    padding: 13px 33px;
     display: inline-block;
     transition: transform 0.4s ease !important;
 
@@ -64,3 +80,86 @@ a.sign-in {
 
     transform: translateY(-5px);
 }
+
+
+
+
+.main-home {
+    height: 110vh;
+    background-image: url('./imgs/blending.svg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: right top;
+    z-index: 2;
+    
+
+
+
+    padding-left: 2rem;
+    align-items: center;
+
+
+
+
+
+
+}
+
+.main-home .first-head {
+
+    font-style: normal;
+    font-weight: 700;
+    color: #142A54;
+    font-size: 96px;
+    line-height: 111px;
+    /* letter-spacing: 4px; */
+}
+
+.main-home .first-p {
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #72809C;
+    line-height: 0;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+
+}
+
+.main-home .main-home-content a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+    border-radius: 32px;
+    color: #142A54;
+    gap: 1rem;
+    font-size: 24px;
+   
+}
+
+
+
+.main-home .main-home-content a{
+   width: 160px;    
+   padding: 14px;
+   background-color: #00FFFC;
+}
+
+.main-home a img {
+    display: inline-block;
+
+
+
+}
+
+
+
+
+
+
+
