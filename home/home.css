@@ -223,7 +223,7 @@ a.sign-in {
     font-style: normal;
     font-weight: 700;
     font-size: 1.8rem;
-    line-height:0rem;
+    line-height: 0rem;
 
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
@@ -248,3 +248,50 @@ a.sign-in {
     background-position: bottom right;
 
 }
+
+
+/* ------------------------------------------------------------second section started----------------------------- */
+
+.second-1 .options .headtag-2 h1 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 94px;
+    color: #142A54;
+}
+
+
+
+ 
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .box-1 .image-1 {
+  
+    flex-basis: 40%;
+  }
+
+  .box-1 .grid-1 {
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .box-1 .grid-1 .item-1 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
