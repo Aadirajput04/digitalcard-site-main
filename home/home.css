@@ -1,8 +1,9 @@
-
-body{
-   box-sizing: border-box;
-   padding: 0;
+body {
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #ECF8FB;
 }
+
 .nav-home {
 
 
@@ -25,11 +26,11 @@ body{
 }
 
 .button-parent {
- display: inline-flex;
- 
+    display: inline-flex;
+
 }
 
-.button-1{
+.button-1 {
     display: flex;
 }
 
@@ -91,7 +92,7 @@ a.sign-in {
     /* background-attachment: fixed; */
     background-position: right top;
     z-index: 2;
-    
+
 
 
 
@@ -134,20 +135,20 @@ a.sign-in {
     text-align: center;
     align-items: center;
     justify-content: center;
-   
+
     border-radius: 32px;
     color: #142A54;
     gap: 1rem;
     font-size: 24px;
-   
+
 }
 
 
 
-.main-home .main-home-content a{
-   width: 160px;    
-   padding: 14px;
-   background-color: #00FFFC;
+.main-home .main-home-content a {
+    width: 160px;
+    padding: 14px;
+    background-color: #00FFFC;
 }
 
 .main-home a img {
@@ -158,8 +159,92 @@ a.sign-in {
 }
 
 
+/* ------------------------------------------second section started--------------------------------------------------------- */
+
+.second-1 .triangle {
+    position: absolute;
+
+}
+
+.second-1 .triangle img {
+    position: relative;
+    top: -14rem;
+}
+
+.second-1 .headtag {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 94px;
+    color: #142A54;
+}
+
+
+
+.second-1 .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27vh;
+    gap: 10rem;
+}
 
 
 
 
+.box {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    background: #FFFFFF;
+    border-radius: 10px;
 
+    gap: 1.5rem;
+}
+
+.box .icon {
+    font-size: 24px;
+    margin-left: 1.5rem;
+    ;
+
+}
+
+.box .text {
+    font-size: 16px;
+    font-weight: bold;
+    width: 20rem;
+}
+
+.box .text h1 {
+    color: #142A54;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height:0rem;
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.box .text p {
+    color: #555555;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.35rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+
+
+
+.second-1 .spaciality {
+
+    background-image: url('./imgs/Blob\ Shape.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+}
