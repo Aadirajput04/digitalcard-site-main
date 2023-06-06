@@ -379,6 +379,11 @@ inputField.addEventListener('input', function() {
 
 
 
+
+
+
+
+
 //      MIN AND MAX INPUT FIELD FOE WHAT YOU DO  JAVASCRIPT END
 
 
@@ -427,11 +432,11 @@ fileInput.addEventListener('change', (event) => {
         let fileInput1 = document.getElementById('Rew-Image1');
 
         fileInput1.addEventListener('change', (event) => {
-            console.log("file input changed");
+
           let reader = new FileReader();
 
           reader.onload = function (event) {
-            console.log("file loaded");
+
             let imageSrc = event.target.result;
 
             localStorage.setItem('Rew-Image1T', imageSrc);
@@ -454,11 +459,11 @@ fileInput.addEventListener('change', (event) => {
         let fileInput1 = document.getElementById('Rew-Image2');
 
         fileInput1.addEventListener('change', (event) => {
-            console.log("file input changed");
+
           let reader = new FileReader();
 
           reader.onload = function (event) {
-            console.log("file loaded");
+
             let imageSrc = event.target.result;
 
             localStorage.setItem('Rew-Image2T', imageSrc);
@@ -500,3 +505,6 @@ fileInput.addEventListener('change', (event) => {
 // window.addEventListener('beforeunload', () => {
 //     localStorage.clear();
 //   });
+
+
+
