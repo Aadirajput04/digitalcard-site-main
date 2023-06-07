@@ -220,9 +220,7 @@ color: #FFFFFF;
 
 }
 
-.right-rew{
-  margin-bottom: 7rem;
-}
+
 
 /* rating css */
 
@@ -297,4 +295,8 @@ color: #FFFFFF;
 
 #Rew-Image2, #Rew-Image3,#Rew-Image1{
 	display: none;
+}
+
+.paymentImg{
+  padding:4rem 0 3rem 13rem !important;
 }
