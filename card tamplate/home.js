@@ -363,6 +363,8 @@ window.addEventListener('load', () => {
 
 
 /// REVIEW SECTION JAVASCRIPT ENDING =================================================
+
+//  QR IMAGE SECTIONS =================================================
 document.addEventListener("DOMContentLoaded", function () {
   var qrImageElement = document.getElementById("QrImageT");
   var uploadedImage = localStorage.getItem("uploadedImage");
@@ -371,3 +373,45 @@ document.addEventListener("DOMContentLoaded", function () {
     qrImageElement.src = uploadedImage;
   }
 });
+
+
+//  QR IMAGE SECTIONS  END=================================================
+
+
+// DOWNLOAD IMAGE OF PAYMENT
+// 
+
+// DOWNLOAD IMAGE OF PAYMENT
+
+
+
+
+
+function downloadImage() {
+  var imageSrc = "./img/qr image.png";
+  var imageName = "qr_image.png";
+
+  var link = document.createElement('a');
+  link.href = imageSrc;
+  link.download = imageName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+function shareImage() {
+  var imageSrc = "./img/qr image.png";
+
+  if (navigator.share) {
+    navigator.share({
+      title: 'QR Image',
+      text: 'Check out this QR code!',
+      url: imageSrc
+    })
+      .then(() => console.log('Image shared successfully.'))
+      .catch((error) => console.error('Error sharing image:', error));
+  } else {
+    console.log('Web Share API not supported.');
+  }
+}
+
