@@ -170,7 +170,7 @@ window.addEventListener("load", () => {
   function createGallery(url) {
     let div = document.createElement("div")
     div.className = "col-md-4"
-    div.innerHTML = `                                
+    div.innerHTML = `
     <div class="gallery-image">
       <img src="./img/7309681.jpg" alt="" height="250px " width="250px">
     </div>`
@@ -307,26 +307,6 @@ emailIcon.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-// window.addEventListener('load', () => {
-//   const imageSrc = localStorage.getItem('companyCustProdImg');
-//   const pImageT = document.getElementById('pImageT');
-
-//   if (imageSrc) {
-//     pImageT.src = imageSrc;
-//   }
-
-//   // Rest of your code...
-// });
-
-
-
-
-
 /// REVIEW SECTION JAVASCRIPT STARTING =================================================
 
 
@@ -353,6 +333,32 @@ window.addEventListener('load', () => {
     pImageT.src = imageSrc;
   }
 });
+
+
+
+/// REVIEW SECTION JAVASCRIPT ENDING =================================================
+
+
+
+
+// window.addEventListener('load', () => {
+//   const imageSrc = localStorage.getItem('companyCustProdImg');
+//   const pImageT = document.getElementById('pImageT');
+
+//   if (imageSrc) {
+//     pImageT.src = imageSrc;
+//   }
+
+//   // Rest of your code...
+// });
+
+
+
+
+
+/// REVIEW SECTION JAVASCRIPT STARTING =================================================
+
+
 
 
 
