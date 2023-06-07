@@ -269,16 +269,11 @@
 
 
                         <div class="col-md-6">
-
                             <div class="payment-qr">
-
-                                <img src="./img/qr image.png" alt="">
-
-                                <button class="down-qr">
-                                    Download QR
-                                </button>
+                              <img src="./img/qr image.png" alt="" id="QrImageT" width="222px" style="border-radius: 15px;">
+                              <button class="down-qr" onclick="downloadImage()">Download QR</button>
                             </div>
-                        </div>
+                          </div>
 
                         <div class="col-md-6 text-center">
                             <h4>Other Payment Methods</h4>
@@ -301,9 +296,7 @@
 
                                 <div class="button-container">
 
-                                    <button class="share-qr">
-                                        Share QR
-                                    </button>
+                                    <button class="share-qr" onclick="shareImage()">Share Qr</button>
                                 </div>
                             </div>
 
@@ -342,7 +335,7 @@
                     </h2>
                     <div class="row mt-5 pt-5 mx3">
 
-                        <div class="container-map">
+                        <div class="container-map" id="C-P-LocationT">
 
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1186794132673!2d72.76602817513262!3d21.147674780531613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be052787c8e0cd3%3A0xd9e8cba8b329cc64!2sSNS%20Atria!5e0!3m2!1sen!2sin!4v1683950001942!5m2!1sen!2sin"
