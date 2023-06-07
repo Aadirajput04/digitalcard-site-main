@@ -527,3 +527,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get a reference to the form element
+    var myForm = document.getElementById("myform");
+
+    // Reset the form when the page is loaded or when a new input is submitted
+    function resetForm() {
+      myForm.reset();
+    }
+
+    // Call the resetForm function
+    resetForm();
+  });
+
+  // form.js
+
+// Check if the page is being loaded for the first time
+if (!localStorage.getItem('loadedBefore')) {
+  // Clear local storage if it's the first time loading the page
+  localStorage.clear();
+
+  // Set a flag in local storage indicating that the page has been loaded before
+  localStorage.setItem('loadedBefore', true);
+}
+
+// Rest of your existing form.js code...
+
+
+
