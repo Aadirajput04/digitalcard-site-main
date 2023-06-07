@@ -506,4 +506,24 @@ fileInput.addEventListener('change', (event) => {
 //   });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var qrImageInput = document.getElementById("QrImage");
+    var qrImageElement = document.getElementById("Qr-Image");
+
+    qrImageInput.addEventListener("change", function (event) {
+      var file = event.target.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        qrImageElement.src = e.target.result;
+        localStorage.setItem("uploadedImage", e.target.result);
+      };
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+
+
 

@@ -363,3 +363,11 @@ window.addEventListener('load', () => {
 
 
 /// REVIEW SECTION JAVASCRIPT ENDING =================================================
+document.addEventListener("DOMContentLoaded", function () {
+  var qrImageElement = document.getElementById("QrImageT");
+  var uploadedImage = localStorage.getItem("uploadedImage");
+
+  if (uploadedImage) {
+    qrImageElement.src = uploadedImage;
+  }
+});
