@@ -139,17 +139,16 @@ a.sign-in {
     border-radius: 32px;
     color: #142A54;
     gap: 1rem;
-    font-size: 24px;
-
-}
-
-
-
-.main-home .main-home-content a {
-    width: 160px;
+    font-size: 19px;
+    width: 190px;
     padding: 14px;
     background-color: #00FFFC;
+
 }
+
+
+
+
 
 .main-home a img {
     display: inline-block;
@@ -652,7 +651,7 @@ h2 {
     border-radius: 40px;
     margin: 1rem;
     width: 90%;
-    text-align:center;
+    text-align: center;
     cursor: pointer;
     font-family: 'Public Sans';
     font-style: normal;
@@ -674,11 +673,11 @@ h2 {
 
 
 
+/*============================================== footer start */
 
-
-footer{
+footer {
     margin-top: 5rem;
- background-color: #142A54;
+    background-color: #142A54;
 }
 
 div.container-footer.w-container {

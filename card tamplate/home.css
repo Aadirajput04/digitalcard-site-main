@@ -355,7 +355,7 @@ body{
 
 
 
-footer {
+/* footer {
     color: white;
     background: #224487;
     padding: 50px 0;
@@ -380,8 +380,8 @@ footer {
 
 .footer-col {
     /* flex-basis: calc(33.33% - 20px); */
-    margin-bottom: 30px;
-}
+    /* margin-bottom: 30px;
+} */ */
 
 h4 {
     font-size: 24px;
