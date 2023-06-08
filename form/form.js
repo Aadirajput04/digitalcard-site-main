@@ -555,3 +555,31 @@ if (!localStorage.getItem('loadedBefore')) {
 
 
 
+function validateImageSize(fileInput) {
+  var fileSize = fileInput.files[0].size; // Get the file size in bytes
+
+  var errorElement = fileInput.parentNode.querySelector('.error'); // Get the error element in the parent container
+
+  if (fileSize > 500 * 1024) { // Check if file size exceeds 500KB (500 * 1024 bytes)
+    // Display an error message
+    errorElement.textContent = 'Image size exceeds the maximum limit of 500KB';
+    fileInput.value = ''; // Clear the selected file
+  } else {
+    // Clear any previous error message
+    errorElement.textContent = '';
+  }
+}
+
+function attachEventListeners() {
+  var fileInputs = document.querySelectorAll('input[type="file"][accept="image/*"]');
+
+  fileInputs.forEach(function(fileInput) {
+    fileInput.addEventListener('change', function() {
+      validateImageSize(this);
+    });
+  });
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  attachEventListeners();
+});

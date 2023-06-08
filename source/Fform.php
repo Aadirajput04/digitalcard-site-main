@@ -19,7 +19,7 @@
 
 <body>
 
-  <form action="/card tamplate/home.html" class="form" method="post" autocomplete="off" id="myform">
+  <form action="/card tamplate/home.html" class="form" method="post" autocomplete="off" id="myform" onsubmit="return validateForm()">
 
     <?php
   include ("../source/Fbasic.php");
@@ -31,6 +31,7 @@
   include ("../source/Freview.php");
     ?>
   </form>
+
 
 
 

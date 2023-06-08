@@ -19,6 +19,7 @@
           <div class="input-group">
             <label for="pImage"></label>
             <input type="file" id="pImage" accept="image/*" required>
+            <span class="error" style="color:red;"></span>
           </div>
         </div>
         <div class="right-1 col-md-5 pt-5">

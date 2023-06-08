@@ -22,6 +22,7 @@
               <img id="userImage" src="..\card tamplate\img\7309681.jpg" alt="">
             </label>
             <input type="file" id="uploadImage" accept="image/*">
+      <span class="error" style="color:red;"></span>
           </div>
 
         </div>

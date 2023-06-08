@@ -7,7 +7,9 @@
             <label class="Gallery-Image" for="gImage">
               <img id="G-Image" src="../card tamplate/img/7309681.jpg" alt="" style="width: 200px; height: 200px;">
             </label>
-            <input type="file" id="gImage" accept="image/*">
+            <input type="file" id="gImage" accept="image/*" >
+            <span class="error" style="color:red;"></span>
+            
           </div>
         </div>
 

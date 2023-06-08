@@ -16,6 +16,7 @@
               <img id="Qr-Image" src="../card tamplate/img/7309681.jpg" alt="">
             </label>
             <input type="file" id="QrImage" accept="image/*">
+            <span class="error" style="color:red;"></span>
           </div>
 
         </div>

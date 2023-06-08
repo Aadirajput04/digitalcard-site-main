@@ -32,6 +32,7 @@
               <img class="rew-Img" src="../card tamplate/img/7309681.jpg" alt="">
             </label>
             <input type="file" class="R-Img" id="Rew-Image1" accept="image/*">
+            <span class="error" style="color:red;"></span>
 
 
 
@@ -86,6 +87,7 @@
               <img class="rew-Img"  src="../card tamplate/img/7309681.jpg" alt="">
             </label>
             <input type="file" class="R-Img" id="Rew-Image2" accept="image/*">
+            <span class="error" style="color:red;"></span>
 
 
 
@@ -141,6 +143,7 @@
               <img class="rew-Img"  src="../card tamplate/img/7309681.jpg" alt="">
             </label>
             <input type="file" class="R-Img" id="Rew-Image3" accept="image/*">
+            <span class="error" style="color:red;"></span>
 
 
 
@@ -151,11 +154,10 @@
         <div class="btn-group mt-5">
           <a href="#" class="btn btn-prev width-50 ml-auto"><--Previous </a>
 
-             <button type="submit" onclick="handleSubmit()" class="btn btn-sub width-50 ml-auto"
-                 ><a href="../card tamplate/home.php">Submit</a></button>
+             <a button type="submit" onclick="handleSubmit()" class="btn btn-sub width-50 ml-auto"
+                  href="../card tamplate/home.php">Submit</a></button>
 
 
         </div>
       </div>
     </div>
-    

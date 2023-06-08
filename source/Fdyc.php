@@ -22,6 +22,7 @@
               <img class="Pro3-Image" id="Pro-Image" src="../card tamplate/img/7309681.jpg" alt="">
             </label>
             <input type="file" class="pro3-img" id="pImage" accept="image/*">
+            <span class="error" style="color:red;"></span>
           </div>
 
 
